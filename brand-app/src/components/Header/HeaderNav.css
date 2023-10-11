@@ -60,7 +60,7 @@
   color: #600D22;
 }
 
-.btn-wrap {
+.sd-header .btn-wrap {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -69,7 +69,7 @@
   text-align: center;
 }
 
-.btn-wrap button {
+.sd-header .btn-wrap button {
   padding: 4px 6px;
   border: 1px solid #600D22;
   border-radius: 5px;
@@ -77,16 +77,16 @@
   color: #600D22;
 }
 
-.btn-wrap button:hover {
+.sd-header .btn-wrap button:hover {
   border: 1px solid #600D22;
   background-color: #600D22;
   color: #fff;
 }
 
-.btn-wrap button {
+.sd-header .btn-wrap button {
   margin-right: 10px;
 }
-.btn-wrap button:last-child {
+.sd-header .btn-wrap button:last-child {
   margin-right: 0;
 }
 
