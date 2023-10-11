@@ -34,39 +34,66 @@
 
 /* --- sidebar --- */
 
-.sd-header .navbar-brand img {
+.sd-header {
   position: relative;
+}
+
+.sd-header .navbar-brand {
+  padding: 40px 0;
+}
+
+.sd-header .navbar-brand img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
   margin: 0 auto;
   padding: 20px;
   width: auto;
-  height: 60px;
+  height: 80px;
 }
 
-.sd-header .close .active {
+.sd-header .close {
   position: absolute;
-  top: 10px;
-  left: -24px;
+  top: 26px;
+  left: 20px;
+  color: #600D22;
 }
 
 .btn-wrap {
-  border-color: #600D22;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.btn-wrap button {
+  padding: 4px 6px;
+  border: 1px solid #600D22;
+  border-radius: 5px;
   background-color: #fff;
   color: #600D22;
 }
 
-.btn-wrap .select {
-  border-color: #600D22;
+.btn-wrap button:hover {
+  border: 1px solid #600D22;
   background-color: #600D22;
   color: #fff;
 }
 
-.navbar-brand img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  height: 60px;
+.btn-wrap button {
+  margin-right: 10px;
+}
+.btn-wrap button:last-child {
+  margin-right: 0;
+}
+
+.line {
+  margin: 20px 0;
+  width: 100%;
+  border: 1px solid rgb(218, 218, 218);
 }
 
 .sidebar{
@@ -90,7 +117,7 @@
   padding: 15px;
 }
 .sd-body{
-  padding: 15px;
+  padding: 0 15px;
   max-height: calc(100vh - 67px);
   overflow-x: hidden;
 }

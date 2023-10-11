@@ -27,15 +27,15 @@ const HeaderNav = () => {
               <a className="navbar-brand" href="/">
                 <img src={logo} alt="logo"/>
               </a>
-              <div className="close" onClick={toggleSidebar}><Icon icon="lucide:list-x"/></div>
+              <div className="close" onClick={toggleSidebar}><Icon icon="lucide:list-x" height="23"/></div>
               <div className="btn-wrap">
                 <button className="" type="button">회원가입</button>
                 <button className="" type="button">로그인</button>
                 <button className="" type="button">주문조회</button>
               </div>
             </div>
-            <div className="line"></div>
             <div className="sd-body">
+              <div className="line"></div>
               <p>
                 <span className="sd-brand">Brand</span>
                 <Icon icon="mdi:cookie-plus"/>
