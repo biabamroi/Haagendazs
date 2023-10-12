@@ -32,6 +32,7 @@
 }
 
 
+
 /* --- sidebar --- */
 
 .sd-header {
@@ -93,10 +94,11 @@
 .line {
   margin: 20px 0;
   width: 100%;
-  border: 1px solid rgb(218, 218, 218);
+  border: 1px solid #ccc;
+  opacity: 0.5;
 }
 
-.sidebar{
+.sidebar {
   width: 280px;
   min-height: 100vh;
   box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.16); /* 오른쪽으로 그림자 표시 */
@@ -107,42 +109,56 @@
   z-index: 1000;
   transition: 0.5s;
 }
-.sidebar.active{
+.sidebar.active {
   right: 0; /* active 클래스 추가 시 오른쪽으로 나타남 */
 }
-.sd-header{
+.sd-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
 }
-.sd-body{
+.sd-body {
   padding: 0 15px;
-  max-height: calc(100vh - 67px);
-  overflow-x: hidden;
 }
-.sd-body ul{
-  display: inline-block;
+
+.sd-body p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.sd-body .sd-brand {
+  font-weight: 700;
+  color: #600D22;
+}
+
+.sd-body ul {
   width: 100%;
   margin-bottom: 0;
   padding: 0;
 }
-.sd-body ul li{
-  list-style: none;
-  margin-bottom: 8px;
+.off {
+  display: none;
 }
-.sd-body ul li .sd-link{
-  display: inline-block;
-  width: 100%;
-  padding: 10px 16px;
-  color: #475f7b;
-  background-color: #e5e8ec;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
+.on {
+  display: block;
 }
 
-.sidebar-overlay{
+.sd-body ul li {
+  list-style: '- ';
+  margin-left: 16px;
+  margin-bottom: 8px;
+  color: #ccc;
+}
+.sd-body ul li .sd-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+.sidebar-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -154,7 +170,22 @@
   visibility: hidden;
   z-index: 500;
 }
-.sidebar-overlay.active{
+.sidebar-overlay.active {
   opacity: 1;
   visibility: visible;
+}
+
+.sd-footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sd-footer a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: black;
+}
+.sd-footer a:last-child {
+  margin-right: 0;
 }
