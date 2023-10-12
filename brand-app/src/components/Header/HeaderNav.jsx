@@ -9,12 +9,18 @@ const HeaderNav = () => {
 
   const toggleSidebar = () => {
     setIsopen(!isOpen);
-    // isOpen === true ? setIsopen(false) : setIsopen(true);
   }
-
-  const [isOn, setIson] = useState(false);
-  const accordion = () => {
-    setIson(!isOn);
+  
+  const [isOn, setIson] = useState({
+    brand: false,
+    products: false,
+    notice: false,
+  });
+  const toggleAccordion = (section) => {
+    setIson({
+      ...isOn,
+      [section]: !isOn[section],
+    });
   }
 
   return (
@@ -44,12 +50,15 @@ const HeaderNav = () => {
             <div className="line"></div>
             <p>
               <span className="sd-brand">Brand</span>
-              <span className="on" onClick={accordion}>
-                <Icon className="switch" icon="mdi:cookie-plus"/>
-                <Icon className="switch" icon="mdi:cookie-minus-outline" />
+              <span className="on" onClick={() => toggleAccordion('brand')}>
+                {isOn.brand ? (
+                  <Icon className="switch" icon="mdi:cookie-plus" />
+                  ) : (
+                  <Icon className="switch" icon="mdi:cookie-minus-outline" />
+                )}
               </span>
             </p>
-            <ul className={`accordion ${isOn ? 'on' : 'off'}`}>
+            <ul className={`accordion ${isOn.brand ? 'off' : 'on'}`}>
               <li><a className="sd-link" href="/">하겐다즈 소개</a></li>
               <li><a className="sd-link" href="/">하겐다즈 브랜드 스토리</a></li>
               <li><a className="sd-link" href="/">하겐다즈 가치</a></li>
@@ -58,12 +67,15 @@ const HeaderNav = () => {
           <div className="line"></div>
             <p>
               <span className="sd-brand">Products</span>
-              <span className="on" onClick={accordion}>
-                <Icon className="switch" icon="mdi:cookie-plus"/>
-                <Icon className="switch" icon="mdi:cookie-minus-outline" />
+              <span className="on" onClick={() => toggleAccordion('products')}>
+                {isOn.products ? (
+                  <Icon className="switch" icon="mdi:cookie-minus-outline" />
+                ) : (
+                  <Icon className="switch" icon="mdi:cookie-plus" />
+                )}
               </span>
             </p>
-            <ul className={`accordion ${isOn ? 'on' : 'off'}`}>
+            <ul className={`accordion ${isOn.products ? 'on' : 'off'}`}>
               <li><a className="sd-link" href="/">전체보기</a></li>
               <li><a className="sd-link" href="/">파인트</a></li>
               <li><a className="sd-link" href="/">미니컵</a></li>
@@ -74,12 +86,15 @@ const HeaderNav = () => {
           <div className="line"></div>
             <p>
               <span className="sd-brand">Notice</span>
-              <span className="on" onClick={accordion}>
-                <Icon className="switch" icon="mdi:cookie-plus"/>
-                <Icon className="switch" icon="mdi:cookie-minus-outline" />
+              <span className="on" onClick={() => toggleAccordion('notice')}>
+                {isOn.notice ? (
+                  <Icon className="switch" icon="mdi:cookie-minus-outline" />
+                ) : (
+                  <Icon className="switch" icon="mdi:cookie-plus" />
+                )}
               </span>
             </p>
-            <ul className={`accordion ${isOn ? 'on' : 'off'}`}>
+            <ul className={`accordion ${isOn.notice ? 'on' : 'off'}`}>
               <li><a className="sd-link" href="/">공지사항</a></li>
               <li><a className="sd-link" href="/">이벤트</a></li>
               <li><a className="sd-link" href="/">매장안내</a></li>
