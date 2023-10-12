@@ -1,92 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  background-color: #600624;
+}
+
 .footer-wrapper {
-  position: relative;
-  bottom: 0;
-}
-
-.footer-wrapper .line {
-  position: relative;
-  border-bottom: 1px solid #600d22;
-}
-
-.footer-wrapper .line > img {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 75px;
-}
-
-
-/* Footer 상단 */
-
-.footer-wrapper .first-box {
+  width: 1140px;
+  height: 300px;
   display: flex;
-  justify-content: space-between;
-  padding: 24px 0 20px 0;
-  font-size: 13px;
-  background-color: #e4e4e4;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
-.footer-wrapper .first-box .call {
-  position: relative;
-  padding: 0 30px 0 40px;
-  color: #600d22;
-  letter-spacing: -1px;
-}
-
-.footer-wrapper .first-box .call .icon {
-  position: absolute;
-  top: 6px;
-  left: 12px;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.footer-wrapper .first-box .call span {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.footer-wrapper .first-box .time {
-  padding-right: 20px;
-  text-align: left;
-  color: #6e6e6e;
-  letter-spacing: -1px;
-}
-
-
-/* Footer 하단 */
-
-.footer-wrapper .second-box {
-  padding: 20px;
-  font-size: 13px;
-  color: #dbdbdb;
-  background-color: #600d22;
-}
-
-.footer-wrapper .second-box .txt-wrap {
+.footer-left {
+  width: 30%;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #fff;
 }
 
-.footer-wrapper .second-box .txt-wrap .text > p {
-  margin: 5px 0;
-  text-align: left;
+.footerlogo {
+  width: 180px;
 }
 
-.footer-wrapper .second-box .txt-wrap .follow > p {
-  margin-bottom: 5px;
-  font-size: 12px;
+.footer-left button {
+  width: 210px;
+  border: 1px solid #fff;
+  background-color: transparent;
   color: #fff;
+  padding: 5px 0;
+  cursor: pointer;
 }
 
-.footer-wrapper .second-box .txt-wrap .follow .sns a {
-  padding-right: 5px;
-  color: #fff;
-}
-
-.footer-wrapper .second-box > p {
-  margin-top: 5px;
-  font-size: 10px;
-  font-weight: 700;
+.footer-right {
+  display: flex;
+  /* align-items: center; */
+  padding-top: 70px;
+  justify-content: center;
+  gap: 70px;
+  width: 70%;
+  /* border: 1px solid yellow; */
 }
