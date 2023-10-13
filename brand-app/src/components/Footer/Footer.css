@@ -55,3 +55,7 @@ footer {
   width: 70%;
   /* border: 1px solid yellow; */
 }
+
+.footer-list {
+  line-height: 35px;
+}
