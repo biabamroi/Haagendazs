@@ -10,6 +10,9 @@ const Section5 = () => {
           <img src="/assets/section5.png" alt="이미지화면" />
           <div className="text-section">
             <p className="s5-title">하겐다즈 품질</p>
+            <div className="slider">
+              <img src="" alt="" />
+            </div>
 
           </div>
         </div>

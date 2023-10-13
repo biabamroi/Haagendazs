@@ -9,7 +9,7 @@ const HeaderNav = () => {
   const toggleSidebar = () => {
     setIsopen(!isOpen);
   }
-  
+
   const [isOn, setIson] = useState({
     brand: false,
     products: false,
@@ -22,23 +22,23 @@ const HeaderNav = () => {
     });
   }
 
-  const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
-  const handleMainMenuMouseEnter = () => {
-    setIsSubMenuVisible(true);
-  }
-  const handleMainMenuMouseLeave = () => {
-    setIsSubMenuVisible(false);
-  }
+  // const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
+  // const handleMainMenuMouseEnter = () => {
+  //   setIsSubMenuVisible(true);
+  // }
+  // const handleMainMenuMouseLeave = () => {
+  //   setIsSubMenuVisible(false);
+  // }
 
   return (
     <>
       <div className='header-wrap'>
         <a href="/">
-          <img src='/assets/logo-bg-white.png' alt="logo"/>
+          <img src='/assets/logo-bg-white.png' alt="logo" />
         </a>
 
 
-        <div
+        {/* <div
           onMouseEnter={this.handleMainMenuMouseEnter}
           onMouseLeave={this.handleMainMenuMouseLeave}
         >
@@ -54,7 +54,7 @@ const HeaderNav = () => {
             <p>파인트</p>
             <p>미니컵</p>
           </div>
-        )}
+        )} */}
 
 
         <button className='toggle-btn' type='button' onClick={toggleSidebar}>
@@ -64,14 +64,14 @@ const HeaderNav = () => {
 
 
       {/* ------- sidebar ------- */}
-      
+
       <div className="container">
         <div className={`sidebar ${isOpen ? 'active' : ''}`}>
           <div className="sd-header">
             <a className="navbar-brand" href="/">
-              <img src='/assets/logo-bg-white.png' alt="logo"/>
+              <img src='/assets/logo-bg-white.png' alt="logo" />
             </a>
-            <div className="close" onClick={toggleSidebar}><Icon icon="lucide:list-x" height="23"/></div>
+            <div className="close" onClick={toggleSidebar}><Icon icon="lucide:list-x" height="23" /></div>
             <div className="btn-wrap">
               <button className="join" type="button">회원가입</button>
               <button className="" type="button">로그인</button>
@@ -85,7 +85,7 @@ const HeaderNav = () => {
               <span className="on" onClick={() => toggleAccordion('brand')}>
                 {isOn.brand ? (
                   <Icon className="switch" icon="mdi:cookie-plus" />
-                  ) : (
+                ) : (
                   <Icon className="switch" icon="mdi:cookie-minus-outline" />
                 )}
               </span>
@@ -96,7 +96,7 @@ const HeaderNav = () => {
               <li><a className="sd-link" href="/">하겐다즈 가치</a></li>
               <li><a className="sd-link" href="/">하겐다즈의 품질 좋은 원료</a></li>
             </ul>
-          <div className="line"></div>
+            <div className="line"></div>
             <p>
               <span className="sd-brand">Products</span>
               <span className="on" onClick={() => toggleAccordion('products')}>
@@ -115,7 +115,7 @@ const HeaderNav = () => {
               <li><a className="sd-link" href="/">케이크&디저트</a></li>
               <li><a className="sd-link" href="/">굿즈</a></li>
             </ul>
-          <div className="line"></div>
+            <div className="line"></div>
             <p>
               <span className="sd-brand">Notice</span>
               <span className="on" onClick={() => toggleAccordion('notice')}>
@@ -132,7 +132,7 @@ const HeaderNav = () => {
               <li><a className="sd-link" href="/">매장안내</a></li>
               <li><a className="sd-link" href="/">고객센터</a></li>
             </ul>
-          <div className="line"></div>
+            <div className="line"></div>
           </div>
           <div className="sd-footer">
             <a href="/">
@@ -160,7 +160,7 @@ const HeaderNav = () => {
 
 export default HeaderNav;
 
-ReactDOM.render(<HeaderNav/>, document.getElementById("root"));
+ReactDOM.render(<HeaderNav />, document.getElementById("root"));
 
 const root = document.getElementById('root');
 const rootContainer = ReactDOM.createRoot(root);
