@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import footerlogo from "./images/logo_white.png";
 import { Icon } from "@iconify/react";
 
 const Footer = () => {
@@ -10,11 +9,7 @@ const Footer = () => {
         <div className="footer-wrapper">
           <div className="footer-top">
             <div className="footer-left">
-              <img
-                src={footerlogo}
-                alt="footer logo image"
-                className="footerlogo"
-              />
+              <img src="/assets/logo_white.png" alt="footer logo image" className="footerlogo" />
               <button type="button">CONTACT US</button>
             </div>
 
@@ -47,6 +42,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+
           <div className="footer-bottom">
             <div className="fb-left">
               <p className="copyright">© 2023 General Mills. All Rights Reserved.</p>
@@ -62,17 +58,24 @@ const Footer = () => {
             </div>
 
             <div className="fb-right">
-              <ul>
-                <li><a href=""><Icon icon="ri:kakao-talk-fill" color="white" /></a></li>
-                <li><a href=""><Icon icon="fa6-brands:square-x-twitter" color="white" /></a></li>
-                <li><a href=""><Icon icon="basil:instagram-solid" color="white" /></a></li>
-                <li><a href=""><Icon icon="ri:facebook-circle-fill" color="white" /></a></li>
-                <li><a href=""><Icon icon="uil:youtube" color="white" /></a></li>
-              </ul>
+              <div className="sns-list">
+                <a href="https://twitter.com/HaagenDazs_US">
+                  <Icon icon="formkit:twitter" height="40" />
+                </a>
+                <a href="https://www.instagram.com/haagendazskorea/">
+                  <Icon icon="entypo-social:instagram-with-circle" height="40" />
+                </a>
+                <a href="https://www.facebook.com/HaagenDazsKR/">
+                  <Icon icon="formkit:facebook" height="40" />
+                </a>
+                <a href="https://www.youtube.com/c/HaagenDazsKorea/featured">
+                  <Icon icon="entypo-social:youtube-with-circle" height="40" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
+      </footer >
     </>
   );
 };
