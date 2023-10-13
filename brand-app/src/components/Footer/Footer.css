@@ -25,7 +25,7 @@ footer {
 .footer-top {
   display: flex;
   width: 100%;
-  height: 350px;
+  height: 320px;
   border-bottom: 1px solid #eee;
 }
 
@@ -53,10 +53,14 @@ footer {
 
 .footer-right {
   display: flex;
-  padding-top: 70px;
   justify-content: center;
   gap: 70px;
+  padding-top: 70px;
   width: 70%;
+}
+
+.footer-right ul {
+  font-size: 12px;
 }
 
 .footer-list {
