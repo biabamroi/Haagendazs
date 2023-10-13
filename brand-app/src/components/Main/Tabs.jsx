@@ -1,13 +1,5 @@
 import React from 'react';
 import './Tabs.css';
-import tabimg1 from './images/pint/pint-img1.jpg'
-import tabimg2 from './images/pint/pint-img2.jpg'
-import tabimg3 from './images/pint/pint-img3.jpg'
-import tabimg4 from './images/pint/pint-img4.jpg'
-import tabimg5 from './images/mini/mini-img1.jpg'
-import tabimg6 from './images/mini/mini-img2.jpg'
-import tabimg7 from './images/mini/mini-img3.jpg'
-import tabimg8 from './images/mini/mini-img4.jpg'
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -57,22 +49,26 @@ const Tabs = () => {
       // 파인트
       return (
         <ul>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=74&cate_no=61&display_group=1'><img src={tabimg1} alt="하겐다즈 딸기 (파인트)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=74&cate_no=61&display_group=1'>
+            <img src='/assets/pint/pint-img1.jpg' alt="하겐다즈 딸기 (파인트)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 딸기 (파인트) 473ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=184&cate_no=1&display_group=4'> <img src={tabimg2} alt="하겐다즈 마카롱 더블 초콜릿 가나슈 (파인트)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=184&cate_no=1&display_group=4'>
+            <img src='/assets/pint/pint-img2.jpg' alt="하겐다즈 마카롱 더블 초콜릿 가나슈 (파인트)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 마카롱 더블 초콜릿 가나슈 (파인트) 403ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=185&cate_no=1&display_group=4'> <img src={tabimg3} alt="하겐다즈 마카롱 스트로베리&라즈베리 (파인트)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=185&cate_no=1&display_group=4'>
+            <img src='/assets/pint/pint-img3.jpg' alt="하겐다즈 마카롱 스트로베리&라즈베리 (파인트)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 마카롱 스트로베리&라즈베리 (파인트) 403ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=190&cate_no=61&display_group=1'> <img src={tabimg4} alt="하겐다즈 마카롱 레몬&유자 (파인트)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=190&cate_no=61&display_group=1'>
+            <img src='/assets/pint/pint-img4.jpg' alt="하겐다즈 마카롱 레몬&유자 (파인트)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 마카롱 레몬&유자 (파인트) 403ml</p>
               <p>₩15,500</p></div></a>
@@ -83,22 +79,26 @@ const Tabs = () => {
       return (
         // 미니컵
         <ul>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=193&cate_no=33&display_group=1'><img src={tabimg5} alt="하겐다즈 체스트넛 타르트 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=193&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 체스트넛 타르트 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 체스트넛 타르트 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=117&cate_no=33&display_group=1'> <img src={tabimg6} alt="하겐다즈 벨지안초콜릿&스트로베리 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=117&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img2.jpg' alt="하겐다즈 벨지안초콜릿&스트로베리 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 벨지안초콜릿&스트로베리 (미니컵) 95ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=23&cate_no=33&display_group=1'> <img src={tabimg7} alt="하겐다즈 바닐라 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=23&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img3.jpg' alt="하겐다즈 바닐라 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 바닐라 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=194&cate_no=33&display_group=1'> <img src={tabimg8} alt="하겐다즈 피스타치오 앤 크림 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=194&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img4.jpg' alt="하겐다즈 피스타치오 앤 크림 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 피스타치오 앤 크림 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
@@ -109,22 +109,26 @@ const Tabs = () => {
       return (
         // 스틱바
         <ul>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=193&cate_no=33&display_group=1'><img src={tabimg5} alt="하겐다즈 체스트넛 타르트 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=193&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 체스트넛 타르트 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 체스트넛 타르트 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=117&cate_no=33&display_group=1'> <img src={tabimg6} alt="하겐다즈 벨지안초콜릿&스트로베리 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=117&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 벨지안초콜릿&스트로베리 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 벨지안초콜릿&스트로베리 (미니컵) 95ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=23&cate_no=33&display_group=1'> <img src={tabimg7} alt="하겐다즈 바닐라 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=23&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 바닐라 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 바닐라 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=194&cate_no=33&display_group=1'> <img src={tabimg8} alt="하겐다즈 피스타치오 앤 크림 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=194&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 피스타치오 앤 크림 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 피스타치오 앤 크림 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
@@ -135,22 +139,26 @@ const Tabs = () => {
       return (
         // 케이크
         <ul>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=193&cate_no=33&display_group=1'><img src={tabimg5} alt="하겐다즈 체스트넛 타르트 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=193&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 체스트넛 타르트 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 체스트넛 타르트 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=117&cate_no=33&display_group=1'> <img src={tabimg6} alt="하겐다즈 벨지안초콜릿&스트로베리 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=117&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 벨지안초콜릿&스트로베리 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 벨지안초콜릿&스트로베리 (미니컵) 95ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=23&cate_no=33&display_group=1'> <img src={tabimg7} alt="하겐다즈 바닐라 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=23&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 바닐라 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 바닐라 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
           </li>
-          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=194&cate_no=33&display_group=1'> <img src={tabimg8} alt="하겐다즈 피스타치오 앤 크림 (미니컵)" />
+          <li><a href='https://haagendazs-store.co.kr/product/detail.html?product_no=194&cate_no=33&display_group=1'>
+            <img src='/assets/mini/mini-img1.jpg' alt="하겐다즈 피스타치오 앤 크림 (미니컵)" />
             <div className="product-info">
               <p className='product-name'>하겐다즈 피스타치오 앤 크림 (미니컵) 100ml</p>
               <p>₩15,500</p></div></a>
