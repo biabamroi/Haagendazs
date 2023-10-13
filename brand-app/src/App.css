@@ -8,10 +8,6 @@
   font-style: normal;
 }
 
-.notsanskr * {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -19,8 +15,7 @@
   font-family: "S-CoreDream-3Light", "Noto Sans KR", sans-serif;
 }
 
-.wrapper {
-  width: 100%;
+body {
+  width: 100vw;
   height: 100vh;
-  margin: 0 auto;
 }
