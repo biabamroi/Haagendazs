@@ -29,9 +29,11 @@
 .slide-text {
   text-align: center;
   border: 1px solid #000;
+  letter-spacing: -0.5px;
+  font-family: Noto Sans KR;
 }
 
 .dripping-img {
   position: absolute;
-  bottom: -530px;
+  bottom: -370px;
 }

@@ -26,7 +26,7 @@ const Section5 = () => {
                 순수한 맛을 경험해보세요.</p>
             </div>
           </div>
-          <img className='dripping-img' src="/assets/footer/Mask_group.png" alt="하단이미지" />
+          <img className='dripping-img' src="/assets/footer/dripping-small.png" alt="하단이미지" />
         </div>
       </section >
     </>
