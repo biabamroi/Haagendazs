@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  color: #fff;
+  /* color: #fff; */
 }
 
 a {
@@ -83,6 +83,10 @@ footer {
 
 .fb-right {
   width: 20%;
+}
+
+.copyright {
+  color: #fff;
 }
 
 .fb-left ul {
