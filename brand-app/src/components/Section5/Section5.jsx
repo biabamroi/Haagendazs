@@ -6,7 +6,10 @@ const Section5 = () => {
   return (
     <>
       <section className='section5'>
-        section
+        <div className="section5-wrapper">
+          <img src="/assets/section5.png" alt="이미지화면" />
+
+        </div>
       </section>
     </>
   );
