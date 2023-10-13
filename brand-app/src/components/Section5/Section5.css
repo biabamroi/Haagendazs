@@ -7,7 +7,6 @@
   position: relative;
   width: 1440px;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 .text-section {
@@ -16,7 +15,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 800px;
-  border: 1px solid #000;
+  text-align: center;
 }
 
 .s5-title {
@@ -27,5 +26,6 @@
 }
 
 .slide-text {
-  width: 500px;
+  text-align: center;
+  border: 1px solid #000;
 }
