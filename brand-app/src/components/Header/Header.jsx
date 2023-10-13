@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import './HeaderNav.css';
+import './Header.css';
 // import logo from '../assets/logo-bg-white.png';
 import { Icon } from '@iconify/react';
 
 const HeaderNav = () => {
   const [isOpen, setIsopen] = useState(false);
-
   const toggleSidebar = () => {
     setIsopen(!isOpen);
   }
@@ -23,16 +22,49 @@ const HeaderNav = () => {
     });
   }
 
+  const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
+  const handleMainMenuMouseEnter = () => {
+    setIsSubMenuVisible(true);
+  }
+  const handleMainMenuMouseLeave = () => {
+    setIsSubMenuVisible(false);
+  }
+
   return (
     <>
       <div className='header-wrap'>
         <a href="/">
           <img src='/assets/logo-bg-white.png' alt="logo"/>
         </a>
+
+
+        <div
+          onMouseEnter={this.handleMainMenuMouseEnter}
+          onMouseLeave={this.handleMainMenuMouseLeave}
+        >
+          <p>하겐다즈 소개</p>
+        </div>
+
+        {this.state.isSubMenuVisible && (
+          <div
+            onMouseEnter={this.handleSubMenuMouseEnter}
+            onMouseLeave={this.handleSubMenuMouseLeave}
+            className="sub-menu"
+          >
+            <p>파인트</p>
+            <p>미니컵</p>
+          </div>
+        )}
+
+
         <button className='toggle-btn' type='button' onClick={toggleSidebar}>
           <Icon icon="gg:menu-left" color="white" height="24" />
         </button>
       </div>
+
+
+      {/* ------- sidebar ------- */}
+      
       <div className="container">
         <div className={`sidebar ${isOpen ? 'active' : ''}`}>
           <div className="sd-header">
