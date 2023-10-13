@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Jaldi&family=Martel+Sans&display=swap");
+
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #600624;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  transform: translateY(-50%);
+  font-family: "Martel Sans", sans-serif;
+  letter-spacing: 5px;
+  color: #fff;
+  font-size: 105px;
+}
+
+.background img {
+  position: absolute;
+  top: 122px;
+  right: 50px;
+  width: 600px;
+  object-fit: cover;
+}
