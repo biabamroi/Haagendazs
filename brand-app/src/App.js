@@ -14,11 +14,11 @@ function App() {
     <>
       <div className="wrapper">
         {/* <Loading /> */}
-        {/* <HeaderNav /> */}
-        {/* <Tabs /> */}
-        {/* <Membership /> */}
+        <HeaderNav />
+        <Tabs />
+        <Membership />
         <Footer />
-        {/* <FooterNav /> */}
+        <FooterNav />
       </div>
     </>
   );

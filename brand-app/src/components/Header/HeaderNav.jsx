@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import './HeaderNav.css';
-import logo from './logo-bg-white.png';
+// import logo from '../assets/logo-bg-white.png';
 import { Icon } from '@iconify/react';
 
 const HeaderNav = () => {
@@ -27,7 +27,7 @@ const HeaderNav = () => {
     <>
       <div className='header-wrap'>
         <a href="/">
-          <img src={logo} alt="logo"/>
+          <img src='/assets/logo-bg-white.png' alt="logo"/>
         </a>
         <button className='toggle-btn' type='button' onClick={toggleSidebar}>
           <Icon icon="gg:menu-left" color="white" height="24" />
@@ -37,7 +37,7 @@ const HeaderNav = () => {
         <div className={`sidebar ${isOpen ? 'active' : ''}`}>
           <div className="sd-header">
             <a className="navbar-brand" href="/">
-              <img src={logo} alt="logo"/>
+              <img src='/assets/logo-bg-white.png' alt="logo"/>
             </a>
             <div className="close" onClick={toggleSidebar}><Icon icon="lucide:list-x" height="23"/></div>
             <div className="btn-wrap">
