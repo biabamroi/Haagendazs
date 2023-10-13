@@ -76,6 +76,7 @@
   border-radius: 5px;
   background-color: #fff;
   color: #600D22;
+  font-size: 14px;
 }
 
 .sd-header .btn-wrap button:hover {
@@ -129,6 +130,7 @@
   cursor: pointer;
 }
 .sd-body .sd-brand {
+  margin-bottom: 10px;
   font-weight: 700;
   color: #600D22;
 }
@@ -138,6 +140,7 @@
   margin-bottom: 0;
   padding: 0;
 }
+
 .off {
   display: none;
 }
@@ -176,10 +179,14 @@
 }
 
 .sd-footer {
-  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .sd-footer a {
   margin-right: 5px;

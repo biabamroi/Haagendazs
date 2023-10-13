@@ -1,60 +1,46 @@
 import React from "react";
 import "./Footer.css";
-import footerlogo from "./logo-bg-white.png";
+import footerlogo from "./images/logo_white.png";
 import { Icon } from "@iconify/react";
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper">
-      <div className="line">
-        <img src={footerlogo} alt="logo" />
-      </div>
-      <div className="first-box">
-        <div className="call">
-          <p>하겐다즈 고객만족센터</p>
-          <div className="icon">
-            <Icon icon="material-symbols:call" />
+    <>
+      <footer>
+        <div className="footer-wrapper">
+          <div className="footer-left">
+            <img src={footerlogo} alt="footer logo image" className="footerlogo" />
+            <button type="button">CONTACT US</button>
           </div>
-          <span>070-7549-7020</span>
-        </div>
-        <div className="time">
-          <p>
-            평일 <b>10:00 ~ 18:00</b>
-          </p>
-          <p>
-            (점심시간 <b>12:00 ~ 13:00</b>)
-          </p>
-        </div>
-      </div>
-
-      <div className="second-box">
-        <div className="txt-wrap">
-          <div className="text">
-            <p>개인정보처리방침</p>
-            <p>이용약관</p>
-            <p>이메일무단수집거부</p>
+          <div className="footer-right" >
+            <ul>
+              <li><a href="">파인트</a></li>
+              <li><a href="">미니 컵</a></li>
+              <li><a href="">스틱바</a></li>
+              <li><a href="">스틱바 멀티팩</a></li>
+              <li><a href="">미니  스틱바</a></li>
+            </ul>
+            <ul>
+              <li><a href="">콘</a></li>
+              <li><a href="">콘 멀티백</a></li>
+            </ul>
+            <ul>
+              <li><a href="">벌크 (업소용)</a></li>
+              <li><a href="">온라인 구매하기</a></li>
+              <li><a href="">업소문의</a></li>
+              <li><a href="">매장 소개</a></li>
+              <li><a href="">크리에이션 메뉴</a></li>
+              <li><a href="">아이스크림 드링크</a></li>
+            </ul>
+            <ul>
+              <li><a href="">하겐다즈 소개</a></li>
+              <li><a href="">품질 좋은 원료</a></li>
+            </ul>
           </div>
-          <div className="follow">
-            <p>Follow Us</p>
-            <div className="sns">
-              <a href="https://twitter.com/HaagenDazs_US">
-                <Icon icon="formkit:twitter" height="23" />
-              </a>
-              <a href="https://www.instagram.com/haagendazskorea/">
-                <Icon icon="entypo-social:instagram-with-circle" height="23" />
-              </a>
-              <a href="https://www.facebook.com/HaagenDazsKR/">
-                <Icon icon="formkit:facebook" height="23" />
-              </a>
-              <a href="https://www.youtube.com/c/HaagenDazsKorea/featured">
-                <Icon icon="entypo-social:youtube-with-circle" height="23" />
-              </a>
-            </div>
-          </div>
+          <div className="footer-bottom"></div>
         </div>
-        <p>Copyright©2021 Haagen-Dazs Korea.All Rights Reserved.</p>
-      </div>
-    </div>
+      </footer>
+    </>
   );
 };
 
