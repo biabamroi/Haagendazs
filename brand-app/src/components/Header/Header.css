@@ -1,30 +1,40 @@
 .header-wrap {
-  position: relative;
-  margin: 20px 0;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  width: 1140px;
   height: 60px;
 }
 
 .header-wrap img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: auto;
-  height: 60px;
+  height: 50px;
+}
+.header-wrap .header-main-menu {
+  display: flex;
+}
+.header-wrap .header-main-menu p {
+  color: black;
+}
+
+.header-wrap .sub-menu p {
+  color: black;
 }
 
 .header-wrap .toggle-btn {
   position: absolute;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 10px;
-  right: 10px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: #600D22;
+  background-color: black;
 }
 
 .header-wrap .side-btn:hover {
@@ -58,7 +68,7 @@
   position: absolute;
   top: 26px;
   left: 20px;
-  color: #600D22;
+  color: black;
 }
 
 .sd-header .btn-wrap {
