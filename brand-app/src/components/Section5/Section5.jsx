@@ -5,6 +5,14 @@ import './Section5.css'
 const Section5 = () => {
   return (
     <>
+
+      {/* 
+    수정사항
+    흘러내리는 이미지 수정하고 여백부분 crop하기
+    footer list 간격 수정하기
+    아이스크림 그림 css 입히기
+    슬라이드 부분 완성하기
+    */}
       <section className='section5'>
         <div className="section5-wrapper">
           <img src="/assets/section5/section5.png" alt="이미지 화면" />
@@ -17,8 +25,8 @@ const Section5 = () => {
                 깊고 부드러운 맛의 정수를 보여주는<br />
                 순수한 맛을 경험해보세요.</p>
             </div>
-            <img src="" alt="" />
           </div>
+          <img className='dripping-img' src="/assets/footer/Mask_group.png" alt="하단이미지" />
         </div>
       </section >
     </>
