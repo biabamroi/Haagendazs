@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import './Header.css';
+import './Search.css';
 // import logo from '../assets/logo-bg-white.png';
 import { Icon } from '@iconify/react';
 
@@ -38,6 +39,20 @@ const HeaderNav = () => {
     setIsSubMenuVisible(false);
   }
 
+  const handleTouchStart = (e) => {
+    // 터치 이벤트를 처리하는 코드를 여기에 작성
+  };
+
+  // 컴포넌트가 마운트될 때 터치 이벤트 핸들러 등록
+  useEffect(() => {
+    document.addEventListener('touchstart', handleTouchStart, true);
+
+    // 컴포넌트가 언마운트될 때 이벤트 핸들러 제거
+    return () => {
+      document.removeEventListener('touchstart', handleTouchStart, true);
+    };
+  }, []); // 빈 배열은 컴포넌트가 마운트될 때 한 번만 실행
+
   return (
     <>
       <div className='header-wrap'>
@@ -65,6 +80,17 @@ const HeaderNav = () => {
             <p>미니컵</p>
           </div>
         )}
+
+
+        <div className="shopping-mall">
+          <Icon icon="clarity:shopping-bag-line" />
+        </div>
+
+        <form class="search-container">
+          <input id="search-box" type="text" class="search-box" name="q" />
+          <label for="search-box"><Icon icon="line-md:search" className="search-icon" hFlip={true} height="20" /></label>
+          <input onClick={handleTouchStart} type="submit" id="search-submit" />
+        </form>
 
 
         <button className='toggle-btn' type='button' onClick={toggleSidebar}>
