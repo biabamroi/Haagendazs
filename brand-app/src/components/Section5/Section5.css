@@ -4,7 +4,24 @@
 }
 
 .section5-wrapper {
+  position: relative;
   width: 1440px;
   margin: 0 auto;
   border: 1px solid #000;
+}
+
+.text-section {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  border: 1px solid #000;
+}
+
+.s5-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Noto Sans KR;
 }
