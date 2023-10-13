@@ -3,8 +3,7 @@ import React from "react";
 // import { Link, useLocation } from 'react-router-dom';
 import "./App.css";
 import Loading from "./components/Loading/Loading.jsx";
-import HeaderNav from "./components/Header/HeaderNav.jsx";
-import Section5 from "./components/Section5/Section5";
+import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
@@ -12,8 +11,7 @@ function App() {
     <>
       <div className="wrapper">
         <Loading />
-        <HeaderNav />
-        <Section5 />
+        <Header />
         <Footer />
       </div>
     </>
