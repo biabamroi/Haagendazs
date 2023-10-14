@@ -8,26 +8,60 @@
   align-items: center;
   width: 1140px;
   height: 60px;
+  z-index: 500;
 }
 
 .header-wrap img {
   width: auto;
   height: 50px;
 }
-.header-wrap .header-main-menu {
+
+.menu-wrap {
+  position: relative;
+}
+
+.menu-wrap .header-main-menu {
   display: flex;
 }
-.header-wrap .header-main-menu p {
+.menu-wrap .header-main-menu p {
+  margin-right: 40px;
+  font-size: 14px;
   color: black;
 }
 
-.header-wrap .sub-menu p {
+.menu-wrap .sub-menu {
+  position: fixed;
+  top: 60px;
+  z-index: 500;
+}
+
+.menu-wrap .sub-menu p {
+  font-size: 13px;
   color: black;
 }
+
+.shopping-mall {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.shopping-mall span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.shopping-mall:hover {
+  transform: scale(1.25);
+}
+
+/* .header-wrap form {
+  
+} */
 
 .header-wrap .toggle-btn {
-  /* position: absolute;
-  right: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,16 +72,43 @@
   background-color: black;
 }
 
-.header-wrap .side-btn:hover {
-  opacity: 80%;
+.header-wrap .toggle-btn:hover {
+  opacity: 50%;
 }
+
 
 
 
 /* --- sidebar --- */
 
+.sidebar {
+  width: 280px;
+  min-height: 100vh;
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.16); /* 오른쪽으로 그림자 표시 */
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -280px; /* 초기에는 오른쪽에서 왼쪽으로 숨김 */
+  z-index: 1000;
+  transition: 0.5s;
+}
+.sidebar.active {
+  right: 0; /* active 클래스 추가 시 오른쪽으로 나타남 */
+}
+
+.line {
+  margin: 20px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  opacity: 0.5;
+}
+
 .sd-header {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .sd-header .navbar-brand {
@@ -70,6 +131,9 @@
   top: 26px;
   left: 20px;
   color: black;
+}
+.sd-header .close:hover {
+  opacity: 50%;
 }
 
 .sd-header .btn-wrap {
@@ -103,33 +167,7 @@
   margin-right: 0;
 }
 
-.line {
-  margin: 20px 0;
-  width: 100%;
-  border: 1px solid #ccc;
-  opacity: 0.5;
-}
 
-.sidebar {
-  width: 280px;
-  min-height: 100vh;
-  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.16); /* 오른쪽으로 그림자 표시 */
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  right: -280px; /* 초기에는 오른쪽에서 왼쪽으로 숨김 */
-  z-index: 1000;
-  transition: 0.5s;
-}
-.sidebar.active {
-  right: 0; /* active 클래스 추가 시 오른쪽으로 나타남 */
-}
-.sd-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-}
 .sd-body {
   padding: 0 15px;
 }
@@ -140,16 +178,11 @@
   align-items: center;
   cursor: pointer;
 }
+
 .sd-body .sd-brand {
   margin-bottom: 10px;
   font-weight: 700;
   color: #600D22;
-}
-
-.sd-body ul {
-  width: 100%;
-  margin-bottom: 0;
-  padding: 0;
 }
 
 .off {
@@ -157,6 +190,17 @@
 }
 .on {
   display: block;
+}
+
+.on .switch:hover,
+.off .switch:hover {
+  opacity: 50%;
+}
+
+.sd-body ul {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .sd-body ul li {
@@ -171,6 +215,7 @@
   color: #666;
   cursor: pointer;
 }
+
 
 .sidebar-overlay {
   position: fixed;
@@ -188,6 +233,7 @@
   opacity: 1;
   visibility: visible;
 }
+
 
 .sd-footer {
   position: absolute;
