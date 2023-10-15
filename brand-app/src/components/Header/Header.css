@@ -23,21 +23,64 @@
 .menu-wrap .header-main-menu {
   display: flex;
 }
-.menu-wrap .header-main-menu p {
+
+.menu-wrap .header-main-menu div > a {
   margin-right: 40px;
+  text-decoration: none;
   font-size: 14px;
+  font-weight: 700;
   color: black;
+}
+.menu-wrap .header-main-menu div:last-child > a {
+  margin-right: 0;
+}
+.menu-wrap .header-main-menu div > a:hover {
+  color: #600D22;
 }
 
 .menu-wrap .sub-menu {
   position: fixed;
-  top: 60px;
+  top: 50px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 200px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
   z-index: 500;
 }
 
-.menu-wrap .sub-menu p {
+.menu-wrap .sub-menu div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+.menu-wrap .sub-menu div:last-child {
+  margin-right: 0;
+}
+
+.menu-wrap .sub-menu div > a {
+  width: 100px;
+  height: 50px;
+  text-decoration: none;
   font-size: 13px;
   color: black;
+}
+.menu-wrap .sub-menu div > a:hover {
+  color: #600D22;
+}
+.bgvanilla {
+  visibility: hidden;
+}
+.menu-wrap .sub-menu div > a:hover .bgvanilla {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
 }
 
 .shopping-mall {
@@ -252,4 +295,7 @@
 }
 .sd-footer a:last-child {
   margin-right: 0;
+}
+.sd-footer a:hover {
+  opacity: 0.5;
 }

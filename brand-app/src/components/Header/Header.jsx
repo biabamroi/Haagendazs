@@ -65,19 +65,29 @@ const HeaderNav = () => {
             onMouseEnter={handleMainMenuMouseEnter} // 메인 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
             onMouseLeave={handleMainMenuMouseLeave} // 메인 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
           >
-            <p>하겐다즈</p>
-            <p>제품</p>
-            <p>매장안내</p>
-            <p>이벤트</p>
+            <div><a href="/">하겐다즈</a></div>
+            <div><a href="/">제품</a></div>
+            <div><a href="/">매장안내</a></div>
+            <div><a href="/">이벤트</a></div>
           </div>
 
           {isSubMenuVisible && ( // isSubMenuVisible 변수 값이 true일 때 실행
           <div className="sub-menu"
-            onMouseEnter={handleSubMenuMouseEnter} // 서브 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
-            onMouseLeave={handleSubMenuMouseLeave} // 서브 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
+          onMouseEnter={handleSubMenuMouseEnter} // 서브 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
+          onMouseLeave={handleSubMenuMouseLeave} // 서브 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
           >
-            <p>파인트</p>
-            <p>미니컵</p>
+            <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+            <div><a href="/">파인트</a></div>
+            <div><a href="/">미니컵</a></div>
+            <div>
+              <a href="/">스틱바</a>
+              <a href="/">스틱바 멀티백</a>
+              <a href="/">미니 스틱바</a>
+            </div>
+            <div>
+              <a href="/">콘</a>
+              <a href="/">콘 멀티백</a>
+            </div>
           </div>
           )}
         </div>
