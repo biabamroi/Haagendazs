@@ -15,7 +15,18 @@ const Section5 = () => {
     */}
       <section className='section5'>
         <div className="section5-wrapper">
-          <img src="/assets/section5/section5.png" alt="이미지 화면" />
+          <div className="images">
+            <img src="/assets/section5/mango.png" alt="아이스크림" className='item icecream_1' />
+            <img src="/assets/section5/matcha.png" alt="아이스크림" className='item icecream_2' />
+            <img src="/assets/section5/brownie.png" alt="아이스크림" className='item icecream_3' />
+            <img src="/assets/section5/macadamia.png" alt="아이스크림" className='item icecream_4' />
+            <img src="/assets/section5/dark-choc.png" alt="아이스크림" className='item icecream_5' />
+            <img src="/assets/section5/strawbs.png" alt="아이스크림" className='item icecream_6' />
+            <img src="/assets/section5/vanilla.png" alt="아이스크림" className='item icecream_7' />
+            <img className='dripping-img' src="/assets/footer/dripping-small.png" alt="하단이미지" />
+          </div>
+          {/* <img src="/assets/section5/section5.png" alt="이미지 화면" /> */}
+
           <div className="text-section">
             <p className="s5-title">하겐다즈 품질</p>
             <div className="slider">
@@ -26,7 +37,7 @@ const Section5 = () => {
                 순수한 맛을 경험해보세요.</p>
             </div>
           </div>
-          <img className='dripping-img' src="/assets/footer/dripping-small.png" alt="하단이미지" />
+
         </div>
       </section >
     </>
