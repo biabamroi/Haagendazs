@@ -81,6 +81,9 @@ const HeaderNav = () => {
                         <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
                       </a>
                     </div>
+                    <div className="bgimg">
+                      <img src="/assets/header/conevanilla.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
+                    </div>
                   </div>
                 )}
               </div>
@@ -119,6 +122,9 @@ const HeaderNav = () => {
                         <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
                       </a>
                     </div>
+                    <div className="bgimg">
+                      <img src="/assets/header/conevanilla.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
+                    </div>
                   </div>
                 )}
               </div>
@@ -139,6 +145,9 @@ const HeaderNav = () => {
                         <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
                       </a>
                     </div>
+                    <div className="bgimg">
+                      <img src="/assets/header/conevanilla.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
+                    </div>
                   </div>
                 )}
               </div>
@@ -158,6 +167,9 @@ const HeaderNav = () => {
                       <a href="/">종료된 이벤트
                         <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
                       </a>
+                    </div>
+                    <div className="bgimg">
+                      <img src="/assets/header/conevanilla.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
                     </div>
                   </div>
                 )}

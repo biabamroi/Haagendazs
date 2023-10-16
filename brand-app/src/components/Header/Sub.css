@@ -15,16 +15,16 @@
 }
 
 /* 삼각형 뿔 */
-.main-menu-wrap .sub-menu:before {
+.main-menu-wrap .header-main-menu > div .sub-menu:before {
   content: "";
   position: absolute;
   top: -10px;
-  left: 123px;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 40px 10px 40px;
   border-color: transparent transparent rgba(255, 255, 255, 0.7) transparent;
+  overflow: visible;
 }
 
 /* 호버 시 서브 메뉴 표시 */
@@ -100,4 +100,21 @@
 
 .main-menu-wrap .header-main-menu > div .sub-menu div > a:hover .bgvanilla {
   display: block;
+}
+
+.bgimg img {
+  position: absolute;
+  right: -40px;
+  bottom: -20px;
+}
+
+.bgimg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 180px;
+  border: 1px solid red;
+  border-radius: 30px;
+  overflow: hidden;
 }
