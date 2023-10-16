@@ -28,7 +28,7 @@
 .section3 .sec-title {
   font-family: "Alef", sans-serif;
   float: right;
-  padding-right: 100px;
+  padding-right: 120px;
   font-size: 50px;
   font-weight: bold;
   font-family: Noto Sans KR;
@@ -57,7 +57,7 @@
   width: 1135px;
   margin: 0 auto;
   display: flex;
-  gap: 75px;
+  gap: 65px;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -89,7 +89,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 120px;
   padding: 15px 40px;
   width: 250px;
   border-radius: 50px;
