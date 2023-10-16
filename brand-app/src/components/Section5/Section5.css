@@ -33,42 +33,42 @@
   width: 250px;
   top: 330px;
   left: 50px;
-  animation: fade-in-item 5s .3s ease-out forwards;
+  animation: fade-in-item 8s .4s ease-out forwards;
 }
 
 .icecream_3 {
   width: 300px;
   top: 140px;
   left: 150px;
-  animation: fade-in-item 5s .4s ease-out forwards;
+  animation: fade-in-item 8s .6s ease-out forwards;
 }
 
 .icecream_4 {
   width: 333px;
   top: 10px;
   left: 330px;
-  animation: fade-in-item 5s .5s ease-out forwards;
+  animation: fade-in-item 8s .8s ease-out forwards;
 }
 
 .icecream_5 {
   width: 400px;
   top: -35px;
   right: 465px;
-  animation: fade-in-item 5s .6s ease-out forwards;
+  animation: fade-in-item 8s 1s ease-out forwards;
 }
 
 .icecream_6 {
   width: 430px;
   top: 100px;
   right: 170px;
-  animation: fade-in-item 5s .7s ease-out forwards;
+  animation: fade-in-item 8s 1.2s ease-out forwards;
 }
 
 .icecream_7 {
   width: 480px;
   top: 350px;
   right: -55px;
-  animation: fade-in-item 5s .8s ease-out forwards;
+  animation: fade-in-item 8s 1.4s ease-out forwards;
 }
 
 @keyframes fade-in-item {
@@ -84,12 +84,12 @@
 
   60% {
     display: block;
-    opacity: .8;
+    opacity: 1;
   }
 
   100% {
     display: block;
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -99,7 +99,7 @@
   bottom: -226px;
 }
 
-.text-section {
+.s5-text {
   position: absolute;
   top: 400px;
   left: 50%;
