@@ -14,7 +14,7 @@ function App() {
     <>
       <div className="wrapper">
         {/* <Loading /> */}
-        {/* <Header /> */}
+        <Header />
         <Section3 />
         <Section4 />
         <Section5 />
