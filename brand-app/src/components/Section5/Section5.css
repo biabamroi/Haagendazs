@@ -1,4 +1,6 @@
-.section5 {
+/* section 공통 */
+
+section {
   width: 100%;
   height: 1024px;
 }
@@ -8,7 +10,6 @@
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 /********** 아이스크림 이미지 위치, 사이즈 조정 **********/
@@ -26,7 +27,7 @@
   width: 200px;
   top: 500px;
   left: -20px;
-  animation: fade-in-item 5s .2s ease-out forwards;
+  animation: fade-in-item 8s .2s ease-out forwards;
 }
 
 .icecream_2 {
@@ -71,28 +72,6 @@
   animation: fade-in-item 8s 1.4s ease-out forwards;
 }
 
-@keyframes fade-in-item {
-  0% {
-    display: block;
-    opacity: 0;
-  }
-
-  30% {
-    display: block;
-    opacity: .5;
-  }
-
-  60% {
-    display: block;
-    opacity: 1;
-  }
-
-  100% {
-    display: block;
-    opacity: 0;
-  }
-}
-
 /**************************************************/
 
 .dripping-img {
@@ -114,12 +93,16 @@
   border: 1px solid red
 }
 
-.s5-title {
+/* .sec-title 공통 */
+.sec-title {
   font-size: 50px;
-  padding-left: 150px;
   font-weight: bold;
-  text-align: left;
   font-family: Noto Sans KR;
+}
+
+.s5-text .sec-title {
+  padding-left: 150px;
+  text-align: left;
 }
 
 .slide-text {
@@ -127,4 +110,28 @@
   border: 1px solid #000;
   letter-spacing: -0.5px;
   font-family: Noto Sans KR;
+}
+
+
+/* 애니메이션 */
+@keyframes fade-in-item {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+
+  30% {
+    display: block;
+    opacity: .5;
+  }
+
+  60% {
+    display: block;
+    opacity: 1;
+  }
+
+  100% {
+    display: block;
+    opacity: 0;
+  }
 }
