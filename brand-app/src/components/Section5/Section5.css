@@ -27,7 +27,7 @@ section {
   width: 200px;
   top: 500px;
   left: -20px;
-  animation: fade-in-item 5s .2s ease-out forwards;
+  animation: fade-in-item 8s .2s ease-out forwards;
 }
 
 .icecream_2 {
