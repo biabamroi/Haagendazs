@@ -9,6 +9,7 @@
   width: 1140px;
   height: 60px;
   z-index: 500;
+  border: 1px solid red;
 }
 
 .header-wrap img {
@@ -126,6 +127,12 @@
 
 .shopping-mall:hover {
   transform: scale(1.25);
+}
+
+
+.header-controls {
+  display: flex;
+  align-items: center;
 }
 
 .header-wrap .toggle-btn {

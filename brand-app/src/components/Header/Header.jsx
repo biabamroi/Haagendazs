@@ -115,15 +115,17 @@ const HeaderNav = () => {
         </div>
 
 
-        <form class="search-container">
-          <input id="search-box" type="text" class="search-box" name="q" />
-          <label for="search-box"><Icon icon="line-md:search" className="search-icon" hFlip={true} height="20" /></label>
-          <input onClick={handleTouchStart} type="submit" id="search-submit" />
-        </form>
+        <div className="header-controls">
+          <form className="search-container">
+            <input id="search-box" type="text" className="search-box" name="q" />
+            <label for="search-box"><Icon icon="line-md:search" className="search-icon" hFlip={true} height="20" /></label>
+            <input onClick={handleTouchStart} type="submit" id="search-submit" />
+          </form>
 
-        <button className='toggle-btn' type='button' onClick={toggleSidebar}>
-          <Icon icon="gg:menu-left" color="white" height="24" />
-        </button>
+          <button className='toggle-btn' type='button' onClick={toggleSidebar}>
+            <Icon icon="gg:menu-left" color="white" height="24" />
+          </button>
+        </div>
 
       </div>
 
