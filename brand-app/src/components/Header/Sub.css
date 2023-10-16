@@ -1,0 +1,103 @@
+
+.main-menu-wrap .sub-menu {
+  position: fixed;
+  top: 50px;
+  left: 60px;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  width: 80%;
+  height: 180px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 500;
+}
+
+/* 삼각형 뿔 */
+.main-menu-wrap .sub-menu:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 123px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 10px 40px;
+  border-color: transparent transparent rgba(255, 255, 255, 0.7) transparent;
+}
+
+/* 호버 시 서브 메뉴 표시 */
+.main-menu-wrap .header-main-menu > div:hover .sub-menu {
+  display: flex; /* 메인 메뉴 항목 위에 마우스를 가져갔을 때 서브 메뉴 표시 */
+}
+
+/* 첫 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
+.main-menu-wrap .header-main-menu > div .haagen:before {
+  left: 40px;
+}
+
+/* 두 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
+.main-menu-wrap .header-main-menu > div .product:before {
+  left: 118px;
+}
+
+/* 세 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
+.main-menu-wrap .header-main-menu > div .shop:before {
+  left: 194px;
+}
+
+/* 네 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
+.main-menu-wrap .header-main-menu > div .event:before {
+  left: 280px;
+}
+
+/* 서브 메뉴 항목 스타일 */
+.main-menu-wrap .header-main-menu > div .sub-menu div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+.main-menu-wrap .header-main-menu > div .sub-menu div:first-child {
+  margin-right: 20px;
+}
+.main-menu-wrap .header-main-menu > div .sub-menu div:last-child {
+  margin-right: 0;
+}
+
+.main-menu-wrap .header-main-menu > div .shop div {
+  padding-left: 160px;
+}
+.main-menu-wrap .header-main-menu > div .event div {
+  padding-left: 240px;
+}
+
+.main-menu-wrap .header-main-menu > div .sub-menu div > a {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+.main-menu-wrap .header-main-menu > div .sub-menu div > a:hover {
+  color: #600D22;
+}
+
+.main-menu-wrap .header-main-menu > div .sub-menu div > a > img {
+  display: none;
+  position: absolute;
+  top: -40%;
+  left: 20%;
+  width: 60px;
+  height: 60px;
+  z-index: -1;
+}
+
+.main-menu-wrap .header-main-menu > div .sub-menu div > a:hover .bgvanilla {
+  display: block;
+}
