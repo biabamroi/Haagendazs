@@ -8,9 +8,6 @@ const Section5 = () => {
 
       {/* 
     수정사항
-    흘러내리는 이미지 수정하고 여백부분 crop하기
-    footer list 간격 수정하기
-    아이스크림 그림 css 입히기
     슬라이드 부분 완성하기
     */}
       <section className='section5'>
@@ -26,7 +23,7 @@ const Section5 = () => {
             <img className='dripping-img' src="/assets/footer/dripping-small.png" alt="하단이미지" />
           </div>
           {/* <img src="/assets/section5/section5.png" alt="이미지 화면" /> */}
-
+          {/* https://codepen.io/bnsddk/pen/dyXaNod */}
           <div className="s5-text">
             <p className="sec-title">하겐다즈 품질</p>
             <div className="slider">
