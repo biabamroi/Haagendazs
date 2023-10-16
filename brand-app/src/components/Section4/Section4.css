@@ -8,32 +8,32 @@
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
-  border: 1px solid green;
+  border: 1px solid transparent;
 }
 
 .s4-text {
   margin-top: 150px;
   text-align: center;
-
 }
 
 .s4-text .sec-title {
   margin-bottom: 30px;
 }
 
+.s4-text .desc {
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
 .sec4-ul {
   position: absolute;
-  top: 45%;
-  left: 0;
-  right: 0;
   bottom: 0;
+  height: 600px;
   list-style: none;
   padding: 0;
   overflow: hidden;
 }
-
-
-
 
 .sec4-ul li {
   float: left;
@@ -70,7 +70,6 @@
   color: #000;
   display: none;
 }
-
 
 .sec4-ul li p {
   color: #000;

@@ -10,7 +10,7 @@ const Section4 = () => {
 
                     <div className="s4-text">
                         <p className="sec-title">하겐다즈 원료</p>
-                        <p className='slide-text'>하겐다즈의 모든 아이스크림은<br />
+                        <p className='desc'>하겐다즈의 모든 아이스크림은<br />
                             크림, 우유, 설탕 및 계란의 기본 원료에서 부터 시작합니다.</p>
                     </div>
 
