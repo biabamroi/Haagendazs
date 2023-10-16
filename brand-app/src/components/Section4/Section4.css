@@ -1,8 +1,3 @@
-section {
-  width: 100%;
-  height: 1024px;
-}
-
 .section4 {
   margin-bottom: 150px;
   background-color: #fff;
@@ -44,7 +39,6 @@ section {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
   filter: alpha(opacity=30);
 }
-
 
 
 .sec4-ul li {

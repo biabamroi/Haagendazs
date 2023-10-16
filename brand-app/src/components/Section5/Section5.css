@@ -1,8 +1,11 @@
 /* section 공통 */
-
 section {
   width: 100%;
   height: 1024px;
+}
+
+.section5 {
+  background-color: #fff;
 }
 
 .section5-wrapper {
@@ -16,7 +19,6 @@ section {
 .section5 .images img {
   position: absolute;
   animation-iteration-count: infinite;
-
 }
 
 .section5 .item {
