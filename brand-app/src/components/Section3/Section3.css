@@ -6,9 +6,8 @@
 .section3-wrapper {
   width: 1440px;
   height: 1024px;
-  padding-top: 270px;
+  padding-top: 230px;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 .section3 .text-top-area {
@@ -22,7 +21,7 @@
 
 .section3 .line-up {
   width: 610px;
-  height: 1px;
+  height: 2px;
   background-color: #fff;
 }
 
@@ -81,9 +80,9 @@
 
 .section3 .line-down {
   width: 450px;
-  height: 1px;
+  height: 2px;
   margin-top: 100px;
-  border: 1px solid #fff;
+  background-color: #fff;
 }
 
 .section3 .viewmore {
@@ -91,7 +90,7 @@
   justify-content: space-between;
   align-items: center;
   margin-right: 100px;
-  padding: 15px 30px;
+  padding: 15px 40px;
   width: 250px;
   border-radius: 50px;
   background-color: #fff;
@@ -100,6 +99,8 @@
 
 .section3 .viewmore p {
   font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
   padding-right: 10px;
 }
 
