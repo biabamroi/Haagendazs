@@ -12,39 +12,44 @@
   border: 1px solid red;
 }
 
-.header-wrap img {
-  width: auto;
-  height: 50px;
+.header-menu-wrap {
+  display: flex;
 }
 
-.menu-wrap {
+.header-wrap .header-menu-wrap img {
+  width: auto;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.main-menu-wrap {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.menu-wrap .header-main-menu {
+.main-menu-wrap .header-main-menu {
   display: flex;
 }
 
-.menu-wrap .header-main-menu div > a {
+.main-menu-wrap .header-main-menu div > a {
   margin-right: 40px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   color: black;
 }
-.menu-wrap .header-main-menu div:last-child > a {
+.main-menu-wrap .header-main-menu div:last-child > a {
   margin-right: 0;
 }
-.menu-wrap .header-main-menu div > a:hover {
+.main-menu-wrap .header-main-menu div > a:hover {
   color: #600D22;
 }
 
-.menu-wrap .sub-menu {
+.main-menu-wrap .sub-menu {
   position: fixed;
   top: 50px;
-  left: 180px;
+  left: 60px;
   display: flex;
   align-items: center;
   width: 60%;
@@ -69,7 +74,7 @@
 
 }
 
-.menu-wrap .sub-menu div {
+.main-menu-wrap .sub-menu div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,14 +82,14 @@
   margin-top: 20px;
   margin-right: 40px;
 }
-.menu-wrap .sub-menu div:first-child {
+.main-menu-wrap .sub-menu div:first-child {
   margin-right: 20px;
 }
-.menu-wrap .sub-menu div:last-child {
+.main-menu-wrap .sub-menu div:last-child {
   margin-right: 0;
 }
 
-.menu-wrap .sub-menu div > a {
+.main-menu-wrap .sub-menu div > a {
   position: relative;
   width: 100px;
   height: 50px;
@@ -93,11 +98,11 @@
   font-size: 13px;
   color: black;
 }
-.menu-wrap .sub-menu div > a:hover {
+.main-menu-wrap .sub-menu div > a:hover {
   color: #600D22;
 }
 
-.menu-wrap .sub-menu div > a > img {
+.main-menu-wrap .sub-menu div > a > img {
   display: none;
   position: absolute;
   top: -40%;
@@ -107,7 +112,7 @@
   z-index: -1;
 }
 
-.menu-wrap .sub-menu div > a:hover .bgvanilla {
+.main-menu-wrap .sub-menu div > a:hover .bgvanilla {
   display: block;
 }
 
@@ -135,7 +140,7 @@
   align-items: center;
 }
 
-.header-wrap .toggle-btn {
+.header-controls .toggle-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +151,7 @@
   background-color: black;
 }
 
-.header-wrap .toggle-btn:hover {
+.header-controls .toggle-btn:hover {
   opacity: 50%;
 }
 

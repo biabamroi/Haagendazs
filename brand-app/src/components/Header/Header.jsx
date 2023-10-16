@@ -55,63 +55,66 @@ const HeaderNav = () => {
 
   return (
     <>
-      <div className='header-wrap'>
-        <a href="/">
-          <img src='/assets/logo-bg-white.png' alt="logo"/>
-        </a>
+      <div className="header-wrap">
+        
+        <div className="header-menu-wrap">
+          <a href="/">
+            <img src='/assets/logo-bg-white.png' alt="logo"/>
+          </a>
 
-        <div className="menu-wrap">
-          <div className="header-main-menu"
-            onMouseEnter={handleMainMenuMouseEnter} // 메인 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
-            onMouseLeave={handleMainMenuMouseLeave} // 메인 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
-          >
-            <div><a href="/">하겐다즈</a></div>
-            <div><a href="/">제품</a></div>
-            <div><a href="/">매장안내</a></div>
-            <div><a href="/">이벤트</a></div>
-          </div>
-          <div className="shopping-mall">
-            <Icon icon="clarity:shopping-bag-line" />
-            <span>&nbsp;Shop</span>
-          </div>
+          <div className="main-menu-wrap">
+            <div className="header-main-menu"
+              onMouseEnter={handleMainMenuMouseEnter} // 메인 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
+              onMouseLeave={handleMainMenuMouseLeave} // 메인 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
+            >
+              <div><a href="/">하겐다즈</a></div>
+              <div><a href="/">제품</a></div>
+              <div><a href="/">매장안내</a></div>
+              <div><a href="/">이벤트</a></div>
+            </div>
+            <div className="shopping-mall">
+              <Icon icon="clarity:shopping-bag-line" />
+              <span>&nbsp;Shop</span>
+            </div>
 
-          {isSubMenuVisible && ( // isSubMenuVisible 변수 값이 true일 때 실행
-          <div className="sub-menu"
-          onMouseEnter={handleSubMenuMouseEnter} // 서브 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
-          onMouseLeave={handleSubMenuMouseLeave} // 서브 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
-          >
-            <div>
-              <a href="/">파인트
-                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
-              </a>
+            {isSubMenuVisible && ( // isSubMenuVisible 변수 값이 true일 때 실행
+            <div className="sub-menu"
+            onMouseEnter={handleSubMenuMouseEnter} // 서브 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
+            onMouseLeave={handleSubMenuMouseLeave} // 서브 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
+            >
+              <div>
+                <a href="/">파인트
+                  <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+                </a>
+              </div>
+              <div>
+                <a href="/">미니컵
+                  <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+                </a>
+              </div>
+              <div>
+                <a href="/">스틱바
+                  <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+                </a>
+                <a href="/">스틱바 멀티백
+                  <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+                </a>
+                <a href="/">미니 스틱바
+                  <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+                </a>
+              </div>
+              <div>
+                <a href="/">콘
+                  <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+                </a>
+                <a href="/">콘 멀티백
+                  <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+                </a>
+              </div>
             </div>
-            <div>
-              <a href="/">미니컵
-                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
-              </a>
-            </div>
-            <div>
-              <a href="/">스틱바
-                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
-              </a>
-              <a href="/">스틱바 멀티백
-                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
-              </a>
-              <a href="/">미니 스틱바
-                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
-              </a>
-            </div>
-            <div>
-              <a href="/">콘
-                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
-              </a>
-              <a href="/">콘 멀티백
-                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
-              </a>
-            </div>
+            )}
+            
           </div>
-          )}
-          
         </div>
 
 
