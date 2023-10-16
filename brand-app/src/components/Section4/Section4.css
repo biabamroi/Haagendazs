@@ -12,16 +12,19 @@
 }
 
 .s4-text {
-  padding-top: 150px;
+  margin-top: 150px;
+  border: 1px solid #000;
+  text-align: center;
+
 }
 
 .s4-text .sec-title {
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .sec4-ul {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -32,6 +35,41 @@
 
 .sec4-ul:hover li:not(:hover) {
   width: 10%;
+}
+
+
+.sec4-ul p {
+  color: #000;
+  font-family: "Noto Sans KR";
+}
+
+.sec4-ul li .desc-item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 3px solid blue;
+}
+
+.sec4-ul li .desc {
+  width: 300px;
+  border: 1px solid #000;
+
+}
+
+
+.sec4-ul li:nth-child(5) img {
+  width: 330px;
+}
+
+
+/* hover아닐시 요소들 */
+.sec4-ul .desc-item {
+  visibility: hidden;
 }
 
 .sec4-ul:hover li:not(:hover) a {
@@ -59,6 +97,38 @@
 }
 
 
+/* hover시 요소들 보이기 */
+.sec4-ul li:hover .desc-item {
+  visibility: visible;
+}
+
+
+.sec4-ul li:hover .ul-title {
+  color: #000;
+  display: none;
+}
+
+
+.sec4-ul li:nth-child(1) {
+  background: #d0f0ff;
+}
+
+.sec4-ul li:nth-child(2) {
+  background: #ffe1e7;
+}
+
+.sec4-ul li:nth-child(3) {
+  background: #c4ffc4;
+}
+
+.sec4-ul li:nth-child(4) {
+  background: #e4c7ff;
+}
+
+.sec4-ul li:nth-child(5) {
+  background: #ffc5b0;
+}
+
 .sec4-ul:hover li:not(:hover):nth-child(1) {
   background: #3a4646;
 }
@@ -83,25 +153,6 @@
   background: #b0a39f;
 }
 
-.sec4-ul li:nth-child(1) {
-  background: #008080;
-}
-
-.sec4-ul li:nth-child(2) {
-  background: #dc143c;
-}
-
-.sec4-ul li:nth-child(3) {
-  background: #32cd32;
-}
-
-.sec4-ul li:nth-child(4) {
-  background: #8a2be2;
-}
-
-.sec4-ul li:nth-child(5) {
-  background: #ff7f50;
-}
 
 .sec4-ul li:nth-child(5):after {
   content: '';
@@ -110,7 +161,7 @@
   top: 0;
   bottom: 0;
   right: -9999px;
-  background: #ff7f50;
+  background: #ffc5b0;
   -webkit-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   -moz-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   -o-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
@@ -121,24 +172,25 @@
 .sec4-ul li a {
   width: 300px;
   line-height: 50px;
-  color: #fff;
+  color: #000;
   position: absolute;
   left: 0;
   bottom: 10px;
-  -webkit-transform-origin: 0 0;
+  /* -webkit-transform-origin: 0 0;
   -moz-transform-origin: 0 0;
   -o-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
+  transform-origin: 0 0; */
+  font-size: 25px;
+  font-family: "Noto Sans KR";
   writing-mode: vertical-lr;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   /* -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg); */
   /* transform: rotate(-90deg); */
   /* text-indent: 20px; */
-  text-decoration: none;
   opacity: 1;
   -ms-filter: none;
   filter: none;
@@ -147,16 +199,4 @@
   -o-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   -ms-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
-}
-
-
-
-
-
-
-
-
-
-.sec4-ul p {
-  color: #000;
 }
