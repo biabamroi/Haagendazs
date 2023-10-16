@@ -9,86 +9,119 @@
   width: 1140px;
   height: 60px;
   z-index: 500;
+  border: 1px solid red;
 }
 
-.header-wrap img {
-  width: auto;
-  height: 50px;
-}
-
-.menu-wrap {
-  position: relative;
-}
-
-.menu-wrap .header-main-menu {
+.header-menu-wrap {
   display: flex;
 }
 
-.menu-wrap .header-main-menu div > a {
+.header-wrap .header-menu-wrap img {
+  width: auto;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.main-menu-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-wrap .header-main-menu {
+  display: flex;
+}
+
+.main-menu-wrap .header-main-menu div > a {
   margin-right: 40px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   color: black;
 }
-.menu-wrap .header-main-menu div:last-child > a {
+.main-menu-wrap .header-main-menu div:last-child > a {
   margin-right: 0;
 }
-.menu-wrap .header-main-menu div > a:hover {
+.main-menu-wrap .header-main-menu div > a:hover {
   color: #600D22;
 }
 
-.menu-wrap .sub-menu {
+.main-menu-wrap .sub-menu {
   position: fixed;
   top: 50px;
-  left: 100px;
+  left: 60px;
   display: flex;
   align-items: center;
   width: 80%;
-  height: 200px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: white;
+  height: 180px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
   z-index: 500;
+
+  /* 삼각형 뿔을 생성하기 위한 가상 요소 스타일 */
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 15px 30px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.7) transparent;
+  }
 }
 
-.menu-wrap .sub-menu div {
+.main-menu-wrap .sub-menu div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 20px;
   margin-right: 40px;
 }
-.menu-wrap .sub-menu div:last-child {
+.main-menu-wrap .sub-menu div:first-child {
+  margin-right: 20px;
+}
+.main-menu-wrap .sub-menu div:last-child {
   margin-right: 0;
 }
 
-.menu-wrap .sub-menu div > a {
+.main-menu-wrap .sub-menu div > a {
+  position: relative;
   width: 100px;
   height: 50px;
+  text-align: center;
   text-decoration: none;
   font-size: 13px;
   color: black;
 }
-.menu-wrap .sub-menu div > a:hover {
+.main-menu-wrap .sub-menu div > a:hover {
   color: #600D22;
 }
-.bgvanilla {
-  visibility: hidden;
-}
-.menu-wrap .sub-menu div > a:hover .bgvanilla {
+
+.main-menu-wrap .sub-menu div > a > img {
+  display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: visible;
+  top: -40%;
+  left: 20%;
+  width: 60px;
+  height: 60px;
+  z-index: -1;
+}
+
+.main-menu-wrap .sub-menu div > a:hover .bgvanilla {
+  display: block;
 }
 
 .shopping-mall {
   display: flex;
   align-items: center;
-  cursor: pointer;
+  margin-left: 40px;
   font-weight: 700;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .shopping-mall span {
@@ -100,11 +133,13 @@
   transform: scale(1.25);
 }
 
-/* .header-wrap form {
-  
-} */
 
-.header-wrap .toggle-btn {
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+
+.header-controls .toggle-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +150,7 @@
   background-color: black;
 }
 
-.header-wrap .toggle-btn:hover {
+.header-controls .toggle-btn:hover {
   opacity: 50%;
 }
 
