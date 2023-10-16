@@ -28,7 +28,7 @@ const Section5 = () => {
           {/* <img src="/assets/section5/section5.png" alt="이미지 화면" /> */}
 
           <div className="s5-text">
-            <p className="s5-title">하겐다즈 품질</p>
+            <p className="sec-title">하겐다즈 품질</p>
             <div className="slider">
               <img className='slide-img' src="/assets/section5/small-vanilla.png" alt="본문 이미지" />
               <p className='slide-text'>품질 좋은 다섯가지 원료만을 사용하여 만든<br />
