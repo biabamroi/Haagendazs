@@ -63,7 +63,7 @@ const HeaderNav = () => {
         <div className="menu-wrap">
           <div className="header-main-menu"
             onMouseEnter={handleMainMenuMouseEnter} // 메인 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
-            onMouseLeave={handleMainMenuMouseLeave} // 메인 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
+            // onMouseLeave={handleMainMenuMouseLeave} // 메인 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
           >
             <div><a href="/">하겐다즈</a></div>
             <div><a href="/">제품</a></div>
@@ -78,7 +78,7 @@ const HeaderNav = () => {
           {isSubMenuVisible && ( // isSubMenuVisible 변수 값이 true일 때 실행
           <div className="sub-menu"
           onMouseEnter={handleSubMenuMouseEnter} // 서브 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
-          onMouseLeave={handleSubMenuMouseLeave} // 서브 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
+          // onMouseLeave={handleSubMenuMouseLeave} // 서브 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
           >
             <div>
               <a href="/">파인트
