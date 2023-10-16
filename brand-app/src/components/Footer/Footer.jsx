@@ -57,22 +57,21 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="fb-right">
-              <div className="sns-list">
-                <a href="https://twitter.com/HaagenDazs_US">
-                  <Icon icon="formkit:twitter" height="40" />
-                </a>
-                <a href="https://www.instagram.com/haagendazskorea/">
-                  <Icon icon="entypo-social:instagram-with-circle" height="40" />
-                </a>
-                <a href="https://www.facebook.com/HaagenDazsKR/">
-                  <Icon icon="formkit:facebook" height="40" />
-                </a>
-                <a href="https://www.youtube.com/c/HaagenDazsKorea/featured">
-                  <Icon icon="entypo-social:youtube-with-circle" height="40" />
-                </a>
-              </div>
+            <div className="fb-right sns-list">
+              <a href="https://twitter.com/HaagenDazs_US">
+                <Icon icon="formkit:twitter" height="40" />
+              </a>
+              <a href="https://www.instagram.com/haagendazskorea/">
+                <Icon icon="entypo-social:instagram-with-circle" height="40" />
+              </a>
+              <a href="https://www.facebook.com/HaagenDazsKR/">
+                <Icon icon="formkit:facebook" height="40" />
+              </a>
+              <a href="https://www.youtube.com/c/HaagenDazsKorea/featured">
+                <Icon icon="entypo-social:youtube-with-circle" height="40" />
+              </a>
             </div>
+
           </div>
         </div>
       </footer >
