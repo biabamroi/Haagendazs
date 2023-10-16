@@ -70,32 +70,50 @@ const HeaderNav = () => {
             <div><a href="/">매장안내</a></div>
             <div><a href="/">이벤트</a></div>
           </div>
+          <div className="shopping-mall">
+            <Icon icon="clarity:shopping-bag-line" />
+            <span>&nbsp;Shop</span>
+          </div>
 
           {isSubMenuVisible && ( // isSubMenuVisible 변수 값이 true일 때 실행
           <div className="sub-menu"
           onMouseEnter={handleSubMenuMouseEnter} // 서브 메뉴에 마우스를 가져다 놓았을 때 이벤트 핸들러
           onMouseLeave={handleSubMenuMouseLeave} // 서브 메뉴에서 마우스가 떠났을 때 이벤트 핸들러
           >
-            <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
-            <div><a href="/">파인트</a></div>
-            <div><a href="/">미니컵</a></div>
             <div>
-              <a href="/">스틱바</a>
-              <a href="/">스틱바 멀티백</a>
-              <a href="/">미니 스틱바</a>
+              <a href="/">파인트
+                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+              </a>
             </div>
             <div>
-              <a href="/">콘</a>
-              <a href="/">콘 멀티백</a>
+              <a href="/">미니컵
+                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+              </a>
+            </div>
+            <div>
+              <a href="/">스틱바
+                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+              </a>
+              <a href="/">스틱바 멀티백
+                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+              </a>
+              <a href="/">미니 스틱바
+                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+              </a>
+            </div>
+            <div>
+              <a href="/">콘
+                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+              </a>
+              <a href="/">콘 멀티백
+                <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
+              </a>
             </div>
           </div>
           )}
+          
         </div>
 
-        <div className="shopping-mall">
-          <Icon icon="clarity:shopping-bag-line" />
-          <span>&nbsp;Shop</span>
-        </div>
 
         <form class="search-container">
           <input id="search-box" type="text" class="search-box" name="q" />
