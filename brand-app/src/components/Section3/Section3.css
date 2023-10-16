@@ -75,6 +75,11 @@
   box-shadow: 5px 5px 10px #ccc;
 }
 
+.section3 .view:hover p {
+  transition: scale 500ms ease-in-out;
+  scale: 1.1;
+}
+
 .section3 .line-down {
   position: absolute;
   bottom: 100px;
