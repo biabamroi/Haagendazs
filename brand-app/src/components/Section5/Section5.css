@@ -13,59 +13,59 @@ section {
 }
 
 /********** 아이스크림 이미지 위치, 사이즈 조정 **********/
-.images img {
+.section5 .images img {
   position: absolute;
   animation-iteration-count: infinite;
 
 }
 
-.item {
+.section5 .item {
   opacity: 0;
 }
 
-.icecream_1 {
+.section5 .icecream_1 {
   width: 200px;
   top: 500px;
   left: -20px;
   animation: fade-in-item 8s .2s ease-out forwards;
 }
 
-.icecream_2 {
+.section5 .icecream_2 {
   width: 250px;
   top: 330px;
   left: 50px;
   animation: fade-in-item 8s .4s ease-out forwards;
 }
 
-.icecream_3 {
+.section5 .icecream_3 {
   width: 300px;
   top: 140px;
   left: 150px;
   animation: fade-in-item 8s .6s ease-out forwards;
 }
 
-.icecream_4 {
+.section5 .icecream_4 {
   width: 333px;
   top: 10px;
   left: 330px;
   animation: fade-in-item 8s .8s ease-out forwards;
 }
 
-.icecream_5 {
+.section5 .icecream_5 {
   width: 400px;
   top: -35px;
   right: 465px;
   animation: fade-in-item 8s 1s ease-out forwards;
 }
 
-.icecream_6 {
+.section5 .icecream_6 {
   width: 430px;
   top: 100px;
   right: 170px;
   animation: fade-in-item 8s 1.2s ease-out forwards;
 }
 
-.icecream_7 {
+.section5 .icecream_7 {
   width: 480px;
   top: 350px;
   right: -55px;
@@ -88,7 +88,7 @@ section {
   /* border: 1px solid red */
 }
 
-.slider {
+.section5 .slider {
   margin-top: 150px;
   border: 1px solid red
 }
@@ -105,7 +105,7 @@ section {
   text-align: left;
 }
 
-.slide-text {
+.section5 .slide-text {
   text-align: center;
   border: 1px solid #000;
   letter-spacing: -0.5px;
