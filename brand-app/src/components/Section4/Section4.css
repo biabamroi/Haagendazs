@@ -83,7 +83,7 @@
   transform: translateY(-50%);
   width: 250px;
   color: #000;
-  line-height: 50px;
+  line-height: 35px;
   letter-spacing: 0px;
   font-size: 25px;
   text-align: center;
@@ -112,7 +112,7 @@
 
 .sec4-ul li .desc {
   width: 700px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 
@@ -131,19 +131,45 @@
 }
 
 .sec4-ul li:nth-child(2) {
-  background: #ffe1e7;
+  background: #E5D9BD;
 }
 
 .sec4-ul li:nth-child(3) {
-  background: #c4ffc4;
+  background: #FFDCE7;
 }
 
 .sec4-ul li:nth-child(4) {
-  background: #e4c7ff;
+  background: #FFDDCF;
 }
 
 .sec4-ul li:nth-child(5) {
-  background: #ffc5b0;
+  background: #D2FFE2;
+}
+
+
+.sec4-ul li:nth-child(1):hover {
+  background: #fff;
+  border: 35px solid #fff5c4;
+}
+
+.sec4-ul li:nth-child(2):hover {
+  background: #fff;
+  border: 35px solid #E5D9BD;
+}
+
+.sec4-ul li:nth-child(3):hover {
+  background: #fff;
+  border: 35px solid #FFDCE7;
+}
+
+.sec4-ul li:nth-child(4):hover {
+  background: #fff;
+  border: 35px solid #FFDDCF;
+}
+
+.sec4-ul li:nth-child(5):hover {
+  background: #fff;
+  border: 35px solid #D2FFE2;
 }
 
 .sec4-ul:hover li:not(:hover):nth-child(1) {
@@ -151,23 +177,23 @@
 }
 
 .sec4-ul:hover li:not(:hover):nth-child(2) {
-  background: #826e72;
+  background: #696457;
 }
 
 .sec4-ul:hover li:not(:hover):nth-child(3) {
-  background: #788778;
+  background: #816c73;
 }
 
 .sec4-ul:hover li:not(:hover):nth-child(4) {
-  background: #877d90;
+  background: #6e615b;
 }
 
 .sec4-ul:hover li:not(:hover):nth-child(5) {
-  background: #b0a39f;
+  background: #64796b;
 }
 
 .sec4-ul:hover li:not(:hover):nth-child(5):after {
-  background: #b0a39f;
+  background: #64796b;
 }
 
 
@@ -178,7 +204,7 @@
   top: 0;
   bottom: 0;
   right: -9999px;
-  background: #ffc5b0;
+  background: #D2FFE2;
   -webkit-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   -moz-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   -o-transition: all 0.5s cubic-bezier(0.35, 0, 0.25, 1);

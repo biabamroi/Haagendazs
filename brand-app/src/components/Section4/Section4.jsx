@@ -29,7 +29,7 @@ const Section4 = () => {
 
                         <li><p className='ul-title'><a href='/'>매장에서 즐기는<br />하겐다즈 아이스크림</a></p>
                             <div className="desc-item">
-                                <img src="/assets/section4/desc2.png" alt="아이스크림 이미지" />
+                                <img src="/assets/section4/desc3.png" alt="아이스크림 이미지" />
                                 <p className='desc'>어디서도 경험해본 적 없는 시즈널 스폐셜 메뉴와<br />
                                     20가지가 넘는 크레이에션 메뉴 및 드링크를 하겐다즈 매장에서 즐길 수 있습니다.<br />
                                     또한 아이스크림 케이크와 더불어 아이스크림 기프팅 제품들도 구매 하실 수 있습니다.<br />
@@ -39,7 +39,7 @@ const Section4 = () => {
 
                         <li><p className='ul-title'><a href='/'>최상의 퀄리티를<br />향한 노력</a></p>
                             <div className="desc-item">
-                                <img src="/assets/section4/desc3.png" alt="아이스크림 이미지" />
+                                <img src="/assets/section4/desc2.png" alt="아이스크림 이미지" />
                                 <p className='desc'>루벤의 목표는 세상에서 가장 맛있는 아이스크림을 만드는 것이었고,<br />
                                     그의 노력은 아이스크림에 대한 사람들의 생각을 바꿔놓았습니다.<br />
                                     하겐다즈 철학은 지금도 동일합니다.<br />

@@ -20,7 +20,6 @@
 }
 
 .section3 .line-up {
-  width: 680px;
   height: 2px;
   background-color: #fff;
 }
@@ -56,7 +55,6 @@
   width: 1135px;
   margin: 0 auto;
   display: flex;
-  gap: 95px;
   flex-direction: column;
   align-items: flex-end;
 }
@@ -65,7 +63,7 @@
   font-family: "Nanum Gothic", sans-serif;
   font-size: 16px;
   letter-spacing: -1px;
-  padding-top: 50px;
+  padding-top: 25px;
   font-weight: bold;
 }
 
@@ -77,9 +75,8 @@
 }
 
 .section3 .line-down {
-  width: 400px;
+  width: 380px;
   height: 2px;
-  margin-top: 100px;
   background-color: #fff;
 }
 
@@ -87,12 +84,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 120px;
+  margin: 60px 0px 260px 0;
   padding: 15px 40px;
   width: 240px;
   border-radius: 50px;
   background-color: #fff;
   border: none;
+  cursor: pointer;
+  z-index: 10;
   box-shadow: 1px 1px 30px rgba(0, 0, 0, .2);
 }
 
@@ -103,12 +102,13 @@
 }
 
 .section3 .viewmore:hover {
-  cursor: pointer;
   transition: box-shadow 500ms ease-in-out;
   box-shadow: 5px 5px 10px #ccc;
+  cursor: pointer;
 }
 
-.section3 .viewmore:hover p {
+.section3 .viewmore:hover p,
+.section3 .viewmore:hover .icon {
   transition: scale 500ms ease-in-out;
   scale: 1.1;
 }

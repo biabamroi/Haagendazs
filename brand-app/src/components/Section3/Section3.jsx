@@ -19,7 +19,7 @@ const Section3 = () => {
             </p>
 
             <button type="button" className="viewmore"><p>View More</p>
-              <Icon icon="solar:round-arrow-right-linear" height="30" />
+              <Icon className='icon' icon="solar:round-alt-arrow-right-line-duotone" height="30" />
             </button>
 
             <div className="line-down fade-in-right"></div>
