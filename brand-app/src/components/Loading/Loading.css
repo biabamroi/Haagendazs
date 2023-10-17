@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Jaldi&family=Martel+Sans&display=swap");
 
-.background {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+.loadingBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: #600624;
+  z-index: 500;
 }
 
-h1 {
+.loadingBackground h1 {
   position: absolute;
   top: 50%;
   left: 300px;
@@ -18,7 +21,7 @@ h1 {
   font-size: 105px;
 }
 
-.background img {
+.loadingBackground img {
   position: absolute;
   top: 122px;
   right: 300px;
