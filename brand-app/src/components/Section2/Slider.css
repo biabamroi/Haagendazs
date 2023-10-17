@@ -1,0 +1,35 @@
+/* App.css */
+
+.slide-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.slide-wrap .top-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slide-wrap .top-box img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.slide-wrap .bottom-box {
+  width: 300px;
+}
+
+.slide-wrap .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-wrap .slide img {
+  max-width: 300px;
+  max-height: 300px;
+}
