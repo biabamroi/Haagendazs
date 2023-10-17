@@ -9,7 +9,7 @@
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
-  border: 1px solid #000;
+  border: 2px solid green;
 }
 
 
@@ -112,7 +112,21 @@
 
 /* slider */
 .sec2-carousel {
-  border: 1px solid #000;
+  position: absolute;
+  right: 240px;
+  bottom: -30px;
   width: 1440px;
+  height: 300px;
   margin: 0 auto;
+  border: 2px solid blue;
+}
+
+.section2 .slide-item {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+.section2 .slide-img {
+  width: 300px;
 }
