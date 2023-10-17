@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Jaldi&family=Martel+Sans&display=swap");
 
 .loadingBackground {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
