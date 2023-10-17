@@ -9,14 +9,15 @@ import 'slick-carousel/slick/slick-theme.css';
 const Section2 = () => {
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
-    centerMode: true,
+    slidesToShow: 4,
+    // slidesToScroll: 1,
+    draggable: true,
     variableWidth: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
   }
 
   return (
@@ -38,43 +39,47 @@ const Section2 = () => {
               <Icon className='icon' icon="solar:round-alt-arrow-right-line-duotone" height="30" />
             </button>
           </div>
+
+          <div className="sec2-carousel">
+            <Slider {...settings}>
+              {/* dots 추후 수정 */}
+              <div className='slide-item item1'>
+                <a href='https://haagendazs-b2b.co.kr/product/detail.html?product_no=190&cate_no=61&display_group=1'>
+                  <img className='slide-img' src="/assets/section2/iecle.png" alt="본문 이미지" /></a>
+                <p className='slide-text'>
+                  하겐다즈 마카롱 레몬&유자</p>
+              </div>
+
+              <div className='slide-item item2'>
+                <a href='https://haagendazs-b2b.co.kr/product/detail.html?product_no=192&cate_no=61&display_group=1'>
+                  <img className='slide-img' src="/assets/section2/slideImg2.png" alt="본문 이미지" /></a>
+                <p className='slide-text'>
+                  하겐다즈 체스트넛 타르트</p>
+              </div>
+
+              <div className='slide-item item3'>
+                <a href='https://haagendazs-b2b.co.kr/product/detail.html?product_no=185&cate_no=61&display_group=1'>
+                  <img className='slide-img' src="/assets/section2/slideImg3.png" alt="본문 이미지" /></a>
+                <p className='slide-text'>
+                  하겐다즈 마카롱 스트로베리&라즈베리</p>
+              </div>
+
+              <div className='slide-item item4'>
+                <a href='/'>
+                  <img className='slide-img' src="/assets/section2/slideImg4.png" alt="본문 이미지" /></a>
+                <p className='slide-text'>
+                  하겐다즈 브라우니 라즈베리</p>
+              </div>
+
+              <div className='slide-item item5'>
+                <a href='/'>
+                  <img className='slide-img' src="/assets/section2/slideImg5.png" alt="본문 이미지" /></a>
+                <p className='slide-text'>
+                  하겐다즈 피스타치오 앤 크림</p>
+              </div>
+            </Slider>
+          </div>
         </div>
-
-        <div className="sec2-carousel">
-          <Slider {...settings}>
-            {/* dots 추후 수정 */}
-            <div className='slide-item item1'>
-              <img className='slide-img' src="/assets/section2/small-vanilla.png" alt="본문 이미지" />
-              <p className='slide-text'>
-                품질 좋은 다섯가지 원료만을 사용하여 만든</p>
-            </div>
-
-            <div className='slide-item item2'>
-              <img className='slide-img' src="/assets/section2/strawberries.png" alt="본문 이미지" />
-              <p className='slide-text'>
-                가장 완벽한 맛의 딸기 아이스크림을 만들기 위하여</p>
-            </div>
-
-            <div className='slide-item item3'>
-              <img className='slide-img' src="/assets/section2/choc.png" alt="본문 이미지" />
-              <p className='slide-text'>
-                초콜릿에 관해서라면 하겐다즈는 최고만을 추구합니다.</p>
-            </div>
-
-            <div className='slide-item item4'>
-              <img className='slide-img' src="/assets/section2/small-caramel.png" alt="본문 이미지" />
-              <p className='slide-text'>
-                입안 가득 풍부함을 보여줄 수 있는 가장 알맞은 클래식한 카라멜 소스를</p>
-            </div>
-
-            <div className='slide-item item5'>
-              <img className='slide-img' src="/assets/section2/small-caramel.png" alt="본문 이미지" />
-              <p className='slide-text'>
-                입안 가득 풍부함을 보여줄 수 있는 가장 알맞은 클래식한 카라멜 소스를</p>
-            </div>
-          </Slider>
-        </div>
-
       </section >
     </>
   );

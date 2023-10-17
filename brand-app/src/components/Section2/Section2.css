@@ -1,15 +1,10 @@
-.section2 {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
+.section2 {}
 
 .section2-wrapper {
   position: relative;
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
-  border: 2px solid green;
 }
 
 
@@ -113,20 +108,69 @@
 /* slider */
 .sec2-carousel {
   position: absolute;
-  right: 240px;
-  bottom: -30px;
+  left: 0;
+  bottom: 30px;
   width: 1440px;
   height: 300px;
   margin: 0 auto;
-  border: 2px solid blue;
 }
 
-.section2 .slide-item {
+.sec2-carousel .slick-slide {
+  margin: 0 10px;
+}
+
+.sec2-carousel .slide-item {
+  position: relative;
   width: 300px;
   height: 300px;
-  border: 1px solid red;
 }
 
-.section2 .slide-img {
+/* 아이템 배경 */
+
+.sec2-carousel .item1 {
+  background-color: #FFF4CA;
+}
+
+.sec2-carousel .item2 {
+  background-color: #E5D9BD;
+}
+
+.sec2-carousel .item3 {
+  background-color: #FFDCE7;
+}
+
+.sec2-carousel .item4 {
+  background-color: #FFDDCF;
+}
+
+.sec2-carousel .item5 {
+  background-color: #D2FFE2;
+}
+
+.sec2-carousel .slide-item a {
+  display: flex;
   width: 300px;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.sec2-carousel .slide-img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  height: 200px;
+}
+
+.sec2-carousel .slide-text {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: -1px;
+  font-family: "BIZ UDPGothic", sans-serif;
 }
