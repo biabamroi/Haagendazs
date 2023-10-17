@@ -57,11 +57,11 @@ body {
 
 .section1 .new-txt {
   font-family: "IBM Plex Sans", sans-serif;
-  padding: 50px 0 18px 0;
-  font-size: 20px;
+  padding: 50px 0 14px 0;
+  font-size: 22px;
   color: #600624;
   font-weight: bold;
-  letter-spacing: 0;
+  letter-spacing: -1px;
 }
 
 .text-up,
@@ -78,14 +78,14 @@ body {
 
 .section1 .viewmore {
   position: absolute;
-  bottom: 380px;
-  right: 182px;
+  bottom: 400px;
+  right: 44px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: 120px;
   padding: 15px 40px;
-  width: 250px;
+  width: 240px;
   border-radius: 50px;
   background-color: #fff;
   border: none;
@@ -94,7 +94,7 @@ body {
 .section1 .viewmore p {
   font-family: "Arimo", sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   padding-right: 10px;
 }
 
@@ -104,7 +104,8 @@ body {
   box-shadow: 5px 5px 10px #ccc;
 }
 
-.section1 .viewmore:hover p {
+.section1 .viewmore:hover p,
+.section1 .viewmore:hover .icon {
   transition: scale 500ms ease-in-out;
   scale: 1.1;
 }
