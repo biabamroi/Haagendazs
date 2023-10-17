@@ -9,7 +9,7 @@
   right: 0;
   background-color: #600624;
   z-index: 800;
-  /* animation: softRemove 2s 2s forwards; */
+  animation: softRemove 2s 2s forwards;
 }
 
 .loadingBackground h1 {
