@@ -11,7 +11,7 @@
   padding: 30px;
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 1px 4px 8px 0 #888;
+  /* box-shadow: 1px 4px 8px 0 #888; */
   z-index: 500;
 }
 
@@ -35,22 +35,22 @@
 
 /* 첫 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
 .main-menu-wrap .header-main-menu > div .haagen:before {
-  left: 40px;
+  left: 48px;
 }
 
 /* 두 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
 .main-menu-wrap .header-main-menu > div .product:before {
-  left: 118px;
+  left: 126px;
 }
 
 /* 세 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
 .main-menu-wrap .header-main-menu > div .shop:before {
-  left: 194px;
+  left: 204px;
 }
 
 /* 네 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
 .main-menu-wrap .header-main-menu > div .event:before {
-  left: 280px;
+  left: 288px;
 }
 
 /* 서브 메뉴 항목 스타일 */
