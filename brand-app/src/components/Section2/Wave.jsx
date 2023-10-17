@@ -3,7 +3,7 @@ import './Wave.css';
 
 function WaveSVG() {
   return (
-    <div className="content-wrap">
+    <div className="section2-wave-wrap">
       <div className="content">
         <div>
           <svg
