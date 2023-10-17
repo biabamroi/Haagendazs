@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react'
 import "./Loading.css";
 import WaveSVG from "./Wave";
+
 
 const Loading = () => {
   // https://clolee.tistory.com/56
@@ -18,3 +19,6 @@ const Loading = () => {
 };
 
 export default Loading;
+
+
+
