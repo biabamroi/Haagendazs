@@ -82,7 +82,7 @@ const HeaderNav = () => {
                       </a>
                     </div>
                     <div className="bgimg">
-                      <img src="/assets/header/conevanilla.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
+                      <img src="/assets/header/stbery.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
                     </div>
                   </div>
                 )}
@@ -123,7 +123,7 @@ const HeaderNav = () => {
                       </a>
                     </div>
                     <div className="bgimg">
-                      <img src="/assets/header/conevanilla.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
+                      <img src="/assets/header/rvanilla.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
                     </div>
                   </div>
                 )}
@@ -146,7 +146,7 @@ const HeaderNav = () => {
                       </a>
                     </div>
                     <div className="bgimg">
-                      <img src="/assets/header/conevanilla.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
+                      <img src="/assets/header/choco.png" style={{ width: '200px', height: '160px' }} alt="conevanilla" />
                     </div>
                   </div>
                 )}

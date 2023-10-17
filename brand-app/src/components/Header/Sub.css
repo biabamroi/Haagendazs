@@ -112,8 +112,9 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 200px;
+  width: 160px;
   height: 180px;
+  object-fit: contain;
   border: 1px solid red;
   border-radius: 30px;
   overflow: hidden;
