@@ -12,7 +12,6 @@ const Section2 = () => {
     infinite: true,
     speed: 300,
     slidesToShow: 4,
-    // slidesToScroll: 1,
     draggable: true,
     variableWidth: true,
     autoplay: true,
@@ -42,7 +41,6 @@ const Section2 = () => {
 
           <div className="sec2-carousel">
             <Slider {...settings}>
-              {/* dots 추후 수정 */}
               <div className='slide-item item1'>
                 <a href='https://haagendazs-b2b.co.kr/product/detail.html?product_no=190&cate_no=61&display_group=1'>
                   <img className='slide-img' src="/assets/section2/iecle.png" alt="본문 이미지" /></a>
@@ -65,20 +63,21 @@ const Section2 = () => {
               </div>
 
               <div className='slide-item item4'>
-                <a href='/'>
+                <a href='/https://haagendazs-b2b.co.kr/product/detail.html?product_no=152&cate_no=32&display_group=1'>
                   <img className='slide-img' src="/assets/section2/slideImg4.png" alt="본문 이미지" /></a>
                 <p className='slide-text'>
                   하겐다즈 브라우니 라즈베리</p>
               </div>
 
               <div className='slide-item item5'>
-                <a href='/'>
+                <a href='https://haagendazs-b2b.co.kr/product/detail.html?product_no=191&cate_no=32&display_group=1'>
                   <img className='slide-img' src="/assets/section2/slideImg5.png" alt="본문 이미지" /></a>
                 <p className='slide-text'>
                   하겐다즈 피스타치오 앤 크림</p>
               </div>
             </Slider>
           </div>
+
         </div>
       </section >
     </>
