@@ -9,6 +9,7 @@
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
+  border: 1px solid #000;
 }
 
 
@@ -16,19 +17,19 @@
 
 .section2-wrapper .circle-img {
   position: absolute;
-  top: 30%;
+  top: 25%;
   transform: translateY(-30%);
-  right: 2%;
+  right: 10%;
 }
 
 .section2-wrapper .circle-img .circle {
-  width: 450px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
   animation: rotate_image 30s linear infinite;
   transform-origin: 50% 50%;
 }
 
-@keyframes rotate_image{
+@keyframes rotate_image {
   100% {
     transform: rotate(360deg);
   }
@@ -36,11 +37,11 @@
 
 .section2-wrapper .circle-img .icecreamcup {
   position: absolute;
-  top: 50%;
+  top: 48%;
   transform: translateY(-50%);
-  right: 60px;
-  width: 300px;
-  height: 300px;
+  right: 80px;
+  width: 330px;
+  height: 330px;
   object-fit: contain;
 }
 
@@ -53,17 +54,21 @@
   left: 10%;
 }
 
-.section2-wrapper .section2-txt span {
-  font-size: 25px;
-  font-weight: 700;
+.section2-wrapper .section2-txt .best-txt {
   color: #600624;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .section2-wrapper .section2-txt p {
   margin-top: 20px;
-  font-size: 40px;
-  font-weight: 700;
   color: black;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -5px;
+  font-family: "BIZ UDPGothic", sans-serif;
 }
 
 
@@ -73,21 +78,23 @@
 .section2-txt-wrap .viewmore {
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 34%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  margin-right: 120px;
   padding: 15px 40px;
-  width: 250px;
+  width: 240px;
   border-radius: 50px;
   background-color: #fff;
   border: none;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, .2);
 }
 
 .section2-txt-wrap .viewmore p {
   font-family: "Arimo", sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .section2-txt-wrap .viewmore:hover {

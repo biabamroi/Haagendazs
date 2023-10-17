@@ -16,8 +16,8 @@ const Section2 = () => {
           </div>
           <div className='section2-txt-wrap'>
             <div className='section2-txt'>
-              <span>Best Products</span>
-              <p>&nbsp;하겐다즈 마카롱 레몬 & 유자</p>
+              <span className='best-txt'>Best Products</span>
+              <p>하겐다즈 마카롱 레몬 & 유자</p>
             </div>
             <button type="button" className="viewmore">
               <p>View More</p>
