@@ -108,3 +108,11 @@
   transition: scale 500ms ease-in-out;
   scale: 1.1;
 }
+
+
+/* slider */
+.sec2-carousel {
+  border: 1px solid #000;
+  width: 1440px;
+  margin: 0 auto;
+}
