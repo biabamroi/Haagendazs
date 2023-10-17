@@ -27,10 +27,10 @@ const Section3 = () => {
 
           <div className="image">
             <img
-              src="/assets/section3/icecream2.png" alt="icecream" className="icecream"
+              src="/assets/section3/icecream2.png" alt="icecream" className="icecream2"
             />
             <img
-              src="/assets/section3/icecream1.png" alt="icecream" className="ice-cream"
+              src="/assets/section3/icecream1.png" alt="icecream" className="icecream1"
             />
           </div>
 
