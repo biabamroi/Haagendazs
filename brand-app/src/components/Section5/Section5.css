@@ -13,6 +13,7 @@ section {
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
+  border: 1px solid #000;
 }
 
 /********** 아이스크림 이미지 위치, 사이즈 조정 **********/
@@ -82,16 +83,11 @@ section {
 
 .s5-text {
   position: absolute;
-  top: 400px;
+  top: 350px;
   left: 50%;
   transform: translateX(-50%);
   width: 800px;
   text-align: center;
-  /* border: 1px solid red */
-}
-
-.section5 .slider {
-  margin-top: 150px;
   border: 1px solid red
 }
 
@@ -107,12 +103,45 @@ section {
   text-align: left;
 }
 
+
+
+
+/* slider세팅 */
+.carousel {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  border: 1px solid #000;
+  width: 700px;
+  height: 300px;
+}
+
+.carousel img {
+  width: 200px;
+}
+
+.slide-item {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
 .section5 .slide-text {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
   text-align: center;
   border: 1px solid #000;
   letter-spacing: -0.5px;
   font-family: Noto Sans KR;
 }
+
 
 
 /* 애니메이션 */
