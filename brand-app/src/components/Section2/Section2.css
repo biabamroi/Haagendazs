@@ -9,7 +9,6 @@
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 
@@ -17,14 +16,14 @@
 
 .section2-wrapper .circle-img {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
+  transform: translateY(-30%);
   right: 2%;
 }
 
 .section2-wrapper .circle-img .circle {
-  width: 530px;
-  height: 530px;
+  width: 450px;
+  height: 450px;
   animation: rotate_image 30s linear infinite;
   transform-origin: 50% 50%;
 }
@@ -39,25 +38,32 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 80px;
-  width: 350px;
-  height: 350px;
+  right: 60px;
+  width: 300px;
+  height: 300px;
   object-fit: contain;
 }
 
 
 /* txt-wrap */
 
-.section2-wrapper .section2-txt-wrap {
-  
+.section2-wrapper .section2-txt-wrap .section2-txt {
+  position: absolute;
+  top: 24%;
+  left: 10%;
 }
 
-.section2-wrapper .section2-txt-wrap .section2-txt {
-  
+.section2-wrapper .section2-txt span {
+  font-size: 25px;
+  font-weight: 700;
+  color: #600624;
 }
 
 .section2-wrapper .section2-txt p {
-
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
 }
 
 
@@ -66,12 +72,11 @@
 
 .section2-txt-wrap .viewmore {
   position: absolute;
-  bottom: 36%;
+  top: 40%;
   left: 20%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin-right: 120px;
   padding: 15px 40px;
   width: 250px;
   border-radius: 50px;
@@ -82,17 +87,17 @@
 .section2-txt-wrap .viewmore p {
   font-family: "Arimo", sans-serif;
   font-weight: bold;
-  font-size: 14px;
-  padding-right: 10px;
+  font-size: 12px;
 }
 
 .section2-txt-wrap .viewmore:hover {
-  cursor: pointer;
   transition: box-shadow 500ms ease-in-out;
   box-shadow: 5px 5px 10px #ccc;
+  cursor: pointer;
 }
 
-.section2-txt-wrap .viewmore:hover p {
+.section2-txt-wrap .viewmore:hover p,
+.section2-txt-wrap .viewmore:hover .icon {
   transition: scale 500ms ease-in-out;
   scale: 1.1;
 }
