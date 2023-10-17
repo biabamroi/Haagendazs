@@ -6,8 +6,10 @@ const Loading = () => {
     <>
       <div className="background">
         <div className="line"></div>
-        <h1>Haagen-Daz</h1>
-        <img src='/assets/icecream.png' alt="아이스크림이미지" />
+        <div className="loading-wrapper">
+          <h1>Haagen-Daz</h1>
+          <img src="/assets/icecream.png" alt="아이스크림이미지" />
+        </div>
       </div>
     </>
   );

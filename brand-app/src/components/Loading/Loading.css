@@ -10,7 +10,7 @@
 h1 {
   position: absolute;
   top: 50%;
-  left: 150px;
+  left: 300px;
   transform: translateY(-50%);
   font-family: "Martel Sans", sans-serif;
   letter-spacing: 5px;
@@ -21,7 +21,7 @@ h1 {
 .background img {
   position: absolute;
   top: 122px;
-  right: 50px;
+  right: 300px;
   width: 600px;
   object-fit: cover;
 }
