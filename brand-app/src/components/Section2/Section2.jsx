@@ -2,13 +2,13 @@ import React from 'react';
 import './Section2.css';
 import { Icon } from "@iconify/react";
 import Wave from './Wave';
-// import Slider from './Slider';
+import Slider from './Slider';
 
 const Section2 = () => {
   return (
     <>
       <section className='section2'>
-          <Wave />
+        <Wave />
         <div className="section2-wrapper">
           <div className='circle-img'>
             <img className='circle' src='/assets/section2/circle.png' alt="circle-icecream" />
@@ -24,10 +24,8 @@ const Section2 = () => {
               <Icon className='icon' icon="solar:round-alt-arrow-right-line-duotone" height="30" />
             </button>
           </div>
-
-          {/* <Slider /> */}
-
         </div>
+        <Slider />
       </section>
     </>
   );
