@@ -114,9 +114,8 @@
   scale: 1.1;
 }
 
-
 .fade-in-left {
-  animation: fade-in-left 3s ease infinite;
+  animation: fade-in-left 3s ease infinite alternate-reverse;
 }
 
 @keyframes fade-in-left {
@@ -134,7 +133,7 @@
 }
 
 .fade-in-right {
-  animation: fade-in-right 3s ease infinite;
+  animation: fade-in-right 3s ease infinite alternate-reverse;
 }
 
 @keyframes fade-in-right {
