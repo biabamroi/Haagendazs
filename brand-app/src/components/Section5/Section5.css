@@ -88,7 +88,6 @@ section {
   transform: translateX(-50%);
   width: 800px;
   text-align: center;
-  border: 1px solid red
 }
 
 /* .sec-title 공통 */
@@ -105,39 +104,40 @@ section {
 
 
 
-
 /* slider세팅 */
 .carousel {
   position: absolute;
   left: 50%;
   top: 150px;
   transform: translateX(-50%);
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   width: 700px;
-  height: 300px;
-}
-
-.carousel img {
-  width: 200px;
+  height: 270px;
 }
 
 .slide-item {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid red;
+}
+
+.slide-item .slide-img {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section5 .slide-text {
   position: absolute;
   left: 50%;
   bottom: 0;
+  width: 100%;
   transform: translateX(-50%);
   text-align: center;
-  border: 1px solid #000;
   letter-spacing: -0.5px;
   font-family: Noto Sans KR;
 }

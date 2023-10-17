@@ -5,18 +5,16 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
-
 const Section5 = () => {
 
   // slick slider setting
   const settings = {
+    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
   }
-
-
 
   return (
     <>
@@ -32,13 +30,13 @@ const Section5 = () => {
             <img src="/assets/section5/vanilla.png" alt="아이스크림" className='item icecream_7' />
             <img className='dripping-img' src="/assets/footer/dripping-small.png" alt="하단이미지" />
           </div>
-          {/* <img src="/assets/section5/section5.png" alt="이미지 화면" /> */}
-          {/* https://codepen.io/bnsddk/pen/dyXaNod */}
+
           <div className="s5-text">
             <p className="sec-title">하겐다즈 품질</p>
 
             <div className="carousel">
               <Slider {...settings}>
+                {/* dots 추후 수정 */}
                 <div className='slide-item'>
                   <img className='slide-img' src="/assets/section5/small-vanilla.png" alt="본문 이미지" />
                   <p className='slide-text'>
@@ -60,21 +58,19 @@ const Section5 = () => {
                   <p className='slide-text'>
                     초콜릿에 관해서라면 하겐다즈는 최고만을 추구합니다.<br />
                     그게 하겐다즈를 그 어떤 브랜드와도<br />
-                    비교할 수 없는 퀄리티의 아이스크림으로 만들어주니까요.</p>
+                    비교할 수 없는 퀄리티의 아이스크림으로 만들어주니까요.<br /><br /></p>
                 </div>
                 <div className='slide-item'>
                   <img className='slide-img' src="/assets/section5/small-caramel.png" alt="본문 이미지" />
                   <p className='slide-text'>
                     입안 가득 풍부함을 보여줄 수 있는 가장 알맞은 클래식한 카라멜 소스를<br />
                     전문가와 함께 찾아냈습니다.<br />
-                    중독적인 맛의 카라멜, 한 번 잡으면 손에서 놓을 수가 없는 맛이죠.</p>
+                    중독적인 맛의 카라멜, 한 번 잡으면 손에서 놓을 수가 없는 맛이죠.<br /><br /></p>
                 </div>
               </Slider>
             </div>
 
           </div>
-
-
 
         </div>
       </section >
