@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Jaldi&family=Martel+Sans&display=swap");
 
 .loadingBackground {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
   right: 0;
   background-color: #600624;
   z-index: 800;
-  animation: softRemove 2s 2s forwards;
+  /* animation: softRemove 2s 2s forwards; */
 }
 
 .loadingBackground h1 {
@@ -21,7 +21,18 @@
   letter-spacing: 5px;
   color: #fff;
   font-size: 105px;
-  text-shadow: 2px 3px 3px rgba(0, 0, 0, .5);
+  text-shadow: 2px 3px 20px rgba(0, 0, 0, .6);
+}
+
+.loadingBackground h1::before {
+  position: absolute;
+  content: '';
+  right: -570px;
+  bottom: -150px;
+  width: 500px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff15;
 }
 
 .loadingBackground img {
@@ -31,7 +42,6 @@
   width: 600px;
   object-fit: cover;
 }
-
 
 
 
