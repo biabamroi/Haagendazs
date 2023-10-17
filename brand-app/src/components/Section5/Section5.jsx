@@ -34,7 +34,7 @@ const Section5 = () => {
           <div className="s5-text">
             <p className="sec-title">하겐다즈 품질</p>
 
-            <div className="carousel">
+            <div className="sec5-carousel">
               <Slider {...settings}>
                 {/* dots 추후 수정 */}
                 <div className='slide-item'>
