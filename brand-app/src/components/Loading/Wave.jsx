@@ -21,8 +21,8 @@ function WaveSVG() {
               ></path>
             </defs>
             <g className="parallax">
-              <use xlinkHref="#gentle-wave" x="48" y="0" fill="#bd909fc9"></use>
-              <use xlinkHref="#gentle-wave" x="48" y="3" fill="#a1472e"></use>
+              <use xlinkHref="#gentle-wave" x="48" y="0" fill="#ffffffaa"></use>
+              <use xlinkHref="#gentle-wave" x="48" y="3" fill="#bd909fc9"></use>
               <use xlinkHref="#gentle-wave" x="48" y="5" fill="#ffffff52"></use>
               <use xlinkHref="#gentle-wave" x="48" y="7" fill="#700f2f"></use>
             </g>
