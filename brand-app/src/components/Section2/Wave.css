@@ -1,7 +1,7 @@
 .content-wrap {
   position: absolute;
   width: 100%;
-  top: 50vh;
+  top: 40vh;
   transform: translateY(-50%);
   z-index: -1;
 }
