@@ -1,47 +1,59 @@
-import React, { useState } from 'react';
-import './Slider.css';
+import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const Sliders = () => {
-  const images = [
-    { id: 1, image: '/assets/section2/iecle.png', description: '하겐다즈 마카롱 레몬&유자' },
-    { id: 2, image: 'image2.jpg', description: '이미지 2 설명' },
-    { id: 3, image: 'image3.jpg', description: '이미지 3 설명' },
-  ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+const Slider = () => {
 
+
+  // slick slider setting
   const settings = {
-    autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 500,
-    slidesToShow: 1,
+    dots: true,
+    slidesToShow: 4,
     slidesToScroll: 1,
-    afterChange: (current) => setCurrentSlide(current),
-  };
+    autoplay: true,
+    autoplaySpeed: 5000,
+  }
+
 
   return (
-    <div className="slide-wrap">
-      <div className="top-box">
-        <img
-          src={images[currentSlide].image}
-          alt={images[currentSlide].description}
-        />
-        <p>{images[currentSlide].description}</p>
-      </div>
-      <div className="bottom-box">
-        <Slider {...settings}>
-          {images.map((img) => (
-            <div key={img.id} className="slide">
-              <img src={img.image} alt={img.description} />
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
+    <>
+      <Slider {...settings}>
+        {/* dots 추후 수정 */}
+        <div className='slide-item'>
+          <img className='slide-img' src="/assets/section5/small-vanilla.png" alt="본문 이미지" />
+          <p className='slide-text'>
+            품질 좋은 다섯가지 원료만을 사용하여 만든<br />
+            하겐다즈 바닐라 아이스크림.<br />
+            깊고 부드러운 맛의 정수를 보여주는<br />
+            순수한 맛을 경험해보세요.</p>
+        </div>
+        <div className='slide-item'>
+          <img className='slide-img' src="/assets/section5/strawberries.png" alt="본문 이미지" />
+          <p className='slide-text'>
+            가장 완벽한 맛의 딸기 아이스크림을 만들기 위하여<br />
+            6년간 알맞은 딸기를 찾았습니다.<br />
+            기본 원료부터 다르니까,<br />
+            오랜 기간동안 하겐다즈의 시그니처 아이스크림일 수 밖에 없죠.</p>
+        </div>
+        <div className='slide-item'>
+          <img className='slide-img' src="/assets/section5/choc.png" alt="본문 이미지" />
+          <p className='slide-text'>
+            초콜릿에 관해서라면 하겐다즈는 최고만을 추구합니다.<br />
+            그게 하겐다즈를 그 어떤 브랜드와도<br />
+            비교할 수 없는 퀄리티의 아이스크림으로 만들어주니까요.<br /><br /></p>
+        </div>
+        <div className='slide-item'>
+          <img className='slide-img' src="/assets/section5/small-caramel.png" alt="본문 이미지" />
+          <p className='slide-text'>
+            입안 가득 풍부함을 보여줄 수 있는 가장 알맞은 클래식한 카라멜 소스를<br />
+            전문가와 함께 찾아냈습니다.<br />
+            중독적인 맛의 카라멜, 한 번 잡으면 손에서 놓을 수가 없는 맛이죠.<br /><br /></p>
+        </div>
+      </Slider>
+    </>
   );
 };
 
-export default Sliders;
+export default Slider;

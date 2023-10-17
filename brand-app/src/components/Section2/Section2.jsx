@@ -1,10 +1,13 @@
 import React from 'react';
 import './Section2.css';
+import Slider from './Slider';
 import { Icon } from "@iconify/react";
 import Wave from './Wave';
-import Slider from './Slider';
+
 
 const Section2 = () => {
+
+
   return (
     <>
       <section className='section2'>
@@ -25,7 +28,11 @@ const Section2 = () => {
             </button>
           </div>
         </div>
-        <Slider />
+
+        <div className="sec2-carousel">
+          <Slider />
+        </div>
+
       </section>
     </>
   );
