@@ -17,12 +17,12 @@ const Section2 = () => {
           </div>
           <div className='section2-txt-wrap'>
             <div className='section2-txt'>
-              <p>Best Products</p>
-              <p>하겐다즈 마카롱 레몬 & 유자</p>
+              <span>Best Products</span>
+              <p>&nbsp;하겐다즈 마카롱 레몬 & 유자</p>
             </div>
             <button type="button" className="viewmore">
               <p>View More</p>
-              <Icon icon="solar:round-arrow-right-linear" height="30" />
+              <Icon className='icon' icon="solar:round-alt-arrow-right-line-duotone" height="30" />
             </button>
           </div>
 
