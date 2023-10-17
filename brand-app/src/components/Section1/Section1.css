@@ -72,13 +72,12 @@ body {
 }
 
 .text-down {
-  padding-top: 10px;
   text-align: right;
 }
 
 .section1 .viewmore {
   position: absolute;
-  bottom: 400px;
+  bottom: 420px;
   right: 44px;
   display: flex;
   justify-content: space-between;
