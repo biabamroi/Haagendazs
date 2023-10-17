@@ -21,9 +21,9 @@ function WaveSVG() {
               ></path>
             </defs>
             <g className="parallax">
-              <use xlinkHref="#gentle-wave" x="48" y="0" fill="#ffffffaa"></use>
-              <use xlinkHref="#gentle-wave" x="48" y="3" fill="#bd909fc9"></use>
-              <use xlinkHref="#gentle-wave" x="48" y="5" fill="#ffffff52"></use>
+              <use xlinkHref="#gentle-wave" x="48" y="0" fill="#82ffe9"></use>
+              <use xlinkHref="#gentle-wave" x="48" y="3" fill="#fff"></use>
+              <use xlinkHref="#gentle-wave" x="48" y="5" fill="#fff"></use>
               <use xlinkHref="#gentle-wave" x="48" y="7" fill="#700f2f"></use>
             </g>
           </svg>
@@ -46,10 +46,10 @@ function WaveSVG() {
               ></path>
             </defs>
             <g className="parallax">
-              <use xlinkHref="#gentle-wave" x="48" y="0" fill="#ebd4dc"></use>
+              <use xlinkHref="#gentle-wave" x="48" y="0" fill="#fff"></use>
               <use xlinkHref="#gentle-wave" x="48" y="3" fill="#ffffff"></use>
               <use xlinkHref="#gentle-wave" x="48" y="5" fill="#ffffff"></use>
-              <use xlinkHref="#gentle-wave" x="48" y="7" fill="#bd909fc9"></use>
+              <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff"></use>
             </g>
           </svg>
         </div>
