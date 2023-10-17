@@ -1,12 +1,10 @@
 .section1 {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-    89.96deg,
-    #ffc8b0 0.04%,
-    rgba(255, 242, 242, 0.79) 52.18%,
-    rgba(236, 255, 118, 0.66) 99.17%
-  );
+  background: linear-gradient(89.96deg,
+      #ffc8b0 0.04%,
+      rgba(255, 242, 242, 0.79) 52.18%,
+      rgba(236, 255, 118, 0.66) 99.17%);
 }
 
 .section1-wrapper {
@@ -31,15 +29,17 @@
 
 .section1 .image-box .darkice {
   position: absolute;
-  left: 0;
-  bottom: 10px;
+  left: 25%;
+  bottom: 140px;
+  width: 400px;
+  height: 550px;
   object-fit: cover;
 }
 
 .section1 .image-box .little-cho {
   position: absolute;
   bottom: 85px;
-  right: -66px;
+  right: -100px;
 }
 
 .section1 .text-box {
