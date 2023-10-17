@@ -1,7 +1,98 @@
+.section2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
 .section2-wrapper {
   position: relative;
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
   border: 1px solid green;
+}
+
+
+/* circle img */
+
+.section2-wrapper .circle-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+}
+
+.section2-wrapper .circle-img .circle {
+  width: 530px;
+  height: 530px;
+  animation: rotate_image 30s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.section2-wrapper .circle-img .icecreamcup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 80px;
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+}
+
+
+/* txt-wrap */
+
+.section2-wrapper .section2-txt-wrap {
+  di
+}
+
+.section2-wrapper .section2-txt-wrap .section2-txt {
+  
+}
+
+.section2-wrapper .section2-txt p {
+
+}
+
+
+
+/* view 버튼 */
+
+.section2-txt-wrap .viewmore {
+  position: absolute;
+  bottom: 36%;
+  left: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 120px;
+  padding: 15px 40px;
+  width: 250px;
+  border-radius: 50px;
+  background-color: #fff;
+  border: none;
+}
+
+.section2-txt-wrap .viewmore p {
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.section2-txt-wrap .viewmore:hover {
+  cursor: pointer;
+  transition: box-shadow 500ms ease-in-out;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.section2-txt-wrap .viewmore:hover p {
+  transition: scale 500ms ease-in-out;
+  scale: 1.1;
 }

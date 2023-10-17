@@ -3,6 +3,7 @@
   width: 100%;
   top: 50vh;
   transform: translateY(-50%);
+  z-index: -1;
 }
 .waves {
   position:relative;
