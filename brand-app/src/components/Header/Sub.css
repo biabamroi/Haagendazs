@@ -1,7 +1,6 @@
-
 .main-menu-wrap .sub-menu {
   position: fixed;
-  top: 80px;
+  top: 83px;
   left: 60px;
   /* display: flex; */
   display: none;
@@ -16,7 +15,7 @@
 }
 
 /* 삼각형 뿔 */
-.main-menu-wrap .header-main-menu > div .sub-menu:before {
+.main-menu-wrap .header-main-menu>div .sub-menu:before {
   content: "";
   position: absolute;
   top: -10px;
@@ -29,32 +28,33 @@
 }
 
 /* 호버 시 서브 메뉴 표시 */
-.main-menu-wrap .header-main-menu > div:hover .sub-menu {
-  display: flex; /* 메인 메뉴 항목 위에 마우스를 가져갔을 때 서브 메뉴 표시 */
+.main-menu-wrap .header-main-menu>div:hover .sub-menu {
+  display: flex;
+  /* 메인 메뉴 항목 위에 마우스를 가져갔을 때 서브 메뉴 표시 */
 }
 
 /* 첫 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
-.main-menu-wrap .header-main-menu > div .haagen:before {
+.main-menu-wrap .header-main-menu>div .haagen:before {
   left: 48px;
 }
 
 /* 두 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
-.main-menu-wrap .header-main-menu > div .product:before {
+.main-menu-wrap .header-main-menu>div .product:before {
   left: 126px;
 }
 
 /* 세 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
-.main-menu-wrap .header-main-menu > div .shop:before {
+.main-menu-wrap .header-main-menu>div .shop:before {
   left: 204px;
 }
 
 /* 네 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
-.main-menu-wrap .header-main-menu > div .event:before {
+.main-menu-wrap .header-main-menu>div .event:before {
   left: 288px;
 }
 
 /* 서브 메뉴 항목 스타일 */
-.main-menu-wrap .header-main-menu > div .sub-menu div {
+.main-menu-wrap .header-main-menu>div .sub-menu div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,21 +62,24 @@
   margin-top: 20px;
   margin-right: 40px;
 }
-.main-menu-wrap .header-main-menu > div .sub-menu div:first-child {
+
+.main-menu-wrap .header-main-menu>div .sub-menu div:first-child {
   margin-right: 20px;
 }
-.main-menu-wrap .header-main-menu > div .sub-menu div:last-child {
+
+.main-menu-wrap .header-main-menu>div .sub-menu div:last-child {
   margin-right: 0;
 }
 
-.main-menu-wrap .header-main-menu > div .shop div {
+.main-menu-wrap .header-main-menu>div .shop div {
   padding-left: 160px;
 }
-.main-menu-wrap .header-main-menu > div .event div {
+
+.main-menu-wrap .header-main-menu>div .event div {
   padding-left: 240px;
 }
 
-.main-menu-wrap .header-main-menu > div .sub-menu div > a {
+.main-menu-wrap .header-main-menu>div .sub-menu div>a {
   position: relative;
   width: 100px;
   height: 50px;
@@ -85,11 +88,12 @@
   font-size: 12px;
   color: black;
 }
-.main-menu-wrap .header-main-menu > div .sub-menu div > a:hover {
+
+.main-menu-wrap .header-main-menu>div .sub-menu div>a:hover {
   color: #600D22;
 }
 
-.main-menu-wrap .header-main-menu > div .sub-menu div > a > img {
+.main-menu-wrap .header-main-menu>div .sub-menu div>a>img {
   display: none;
   position: absolute;
   top: -40%;
@@ -99,7 +103,7 @@
   z-index: -1;
 }
 
-.main-menu-wrap .header-main-menu > div .sub-menu div > a:hover .bgvanilla {
+.main-menu-wrap .header-main-menu>div .sub-menu div>a:hover .bgvanilla {
   display: block;
 }
 
