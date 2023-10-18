@@ -242,12 +242,12 @@ const HeaderNav = () => {
               </span>
             </p>
             <ul className={`accordion ${isOn.products ? 'on' : 'off'}`}>
-              <li><a className="sd-link" href="/">전체보기</a></li>
-              <li><a className="sd-link" href="/">파인트</a></li>
-              <li><a className="sd-link" href="/">미니컵</a></li>
-              <li><a className="sd-link" href="/">스틱바/샌드</a></li>
-              <li><a className="sd-link" href="/">케이크&디저트</a></li>
-              <li><a className="sd-link" href="/">굿즈</a></li>
+              <li><a className="sd-link" href="https://haagendazs-store.co.kr/category/%EC%A0%84%EC%B2%B4%EB%B3%B4%EA%B8%B0/61/">전체보기</a></li>
+              <li><a className="sd-link" href="https://haagendazs-store.co.kr/category/%ED%8C%8C%EC%9D%B8%ED%8A%B8/32/">파인트</a></li>
+              <li><a className="sd-link" href="https://haagendazs-store.co.kr/category/%EB%AF%B8%EB%8B%88%EC%BB%B5/33/">미니컵</a></li>
+              <li><a className="sd-link" href="https://haagendazs-store.co.kr/category/%EC%8A%A4%ED%8B%B1%EB%B0%94/48/">스틱바/샌드</a></li>
+              <li><a className="sd-link" href="https://haagendazs-store.co.kr/category/%EC%BC%80%EC%9D%B4%ED%81%AC%EB%94%94%EC%A0%80%ED%8A%B8/49/">케이크&디저트</a></li>
+              <li><a className="sd-link" href="https://haagendazs-store.co.kr/category/%EA%B5%BF%EC%A6%88/50/">굿즈</a></li>
             </ul>
           <div className="line"></div>
             <p>
