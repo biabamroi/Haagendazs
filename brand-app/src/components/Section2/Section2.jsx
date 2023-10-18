@@ -33,7 +33,7 @@ const Section2 = () => {
               <span className='best-txt'>Best Products</span>
               <p>하겐다즈 마카롱 레몬 & 유자</p>
             </div>
-            <button type="button" className="viewmore">
+            <button type="button" className="viewmore" onClick={() => window.open("https://haagendazs-store.co.kr/product/detail.html?product_no=190&cate_no=61&display_group=1")}>
               <p>View More</p>
               <Icon className='icon' icon="solar:round-alt-arrow-right-line-duotone" height="30" />
             </button>

@@ -18,7 +18,7 @@ const Section3 = () => {
               확인해보세요
             </p>
 
-            <button type="button" className="viewmore"><p>View More</p>
+            <button type="button" className="viewmore" onClick={() => window.open("https://haagendazs-store.co.kr/brand/brand.html")}><p>View More</p>
               <Icon className='icon' icon="solar:round-alt-arrow-right-line-duotone" height="30" />
             </button>
 

@@ -35,7 +35,7 @@ const Section1 = () => {
             <p className="text-down">& 아몬드 파인트</p>
           </div>
 
-          <button type="button" className="viewmore">
+          <button type="button" className="viewmore" onClick={() => window.open("https://haagendazs-store.co.kr/product/detail.html?product_no=40&cate_no=32&display_group=1")}>
             <p>View More</p>
             <Icon className='icon' icon="solar:round-alt-arrow-right-line-duotone" height="30" />
           </button>
