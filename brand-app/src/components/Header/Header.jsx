@@ -177,7 +177,7 @@ const HeaderNav = () => {
             </div>
           </div>
           <div className="shopping-mall" onClick={() => window.open("https://haagendazs-store.co.kr/")}>
-            <Icon icon="clarity:shopping-bag-line" />
+            <Icon icon="clarity:shopping-bag-line"/>
             <span>&nbsp;Shop</span>
           </div>
         </div>
