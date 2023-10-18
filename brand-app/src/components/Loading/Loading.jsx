@@ -8,8 +8,8 @@ const Loading = () => {
     <>
       <div className="loadingBackground">
         <div className="loading-wrapper">
-          <h1>Haagen-Dazs</h1>
           <img src="/assets/icecream.png" alt="아이스크림이미지" />
+          <h1>Haagen-Dazs</h1>
           <WaveSVG />
         </div>
       </div>
