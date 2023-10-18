@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Jaldi&family=Martel+Sans&display=swap");
 
 .loadingBackground {
-  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -24,11 +23,12 @@
   text-shadow: 2px 3px 20px rgba(0, 0, 0, .6);
 }
 
-.loadingBackground h1::before {
+
+.loadingBackground div::before {
   position: absolute;
   content: '';
-  right: -570px;
-  bottom: -150px;
+  right: 333px;
+  bottom: 24%;
   width: 500px;
   height: 100px;
   border-radius: 50%;
