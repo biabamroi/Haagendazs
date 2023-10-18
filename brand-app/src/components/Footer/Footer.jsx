@@ -50,7 +50,7 @@ const Footer = () => {
                 <li><a href="https://haagendazs-store.co.kr/board/faq/list.html">문의처</a></li>
                 <li><a href="https://haagendazs-store.co.kr/member/privacy.html">개인정보 취급방침</a></li>
                 <li><a href="https://haagendazs-store.co.kr/member/agreement.html">사이트 이용약관</a></li>
-                <li><div className="disable">쿠키 설정 사용자 지정</div></li>
+                <li className="disable"><div className="disable">쿠키 설정 사용자 지정</div></li>
                 <li><a href="https://haagendazs-store.co.kr/member/email.html">데이터 프라이버시 요청</a></li>
               </ul>
             </div>
