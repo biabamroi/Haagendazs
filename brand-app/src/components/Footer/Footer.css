@@ -52,6 +52,13 @@ footer {
   cursor: pointer;
 }
 
+.footer-left button:hover {
+  font-weight: 700;
+  color: #600624;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
 .footer-right {
   display: flex;
   /* justify-content: center; */
@@ -66,6 +73,10 @@ footer {
 
 .footer-list {
   line-height: 35px;
+}
+
+.footer-list li a:hover {
+  opacity: 0.5;
 }
 
 
@@ -95,8 +106,16 @@ footer {
   color: #fff;
 }
 
+.disable {
+  color: gray;
+}
+
 .fb-left ul {
   display: flex;
   margin-top: 20px;
   gap: 15px;
+}
+
+.sns-list a:hover {
+  opacity: 0.5;
 }
