@@ -79,9 +79,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 220px;
   margin-right: 120px;
-  padding: 15px 40px;
-  width: 240px;
+  padding: 13px 25px;
   border-radius: 50px;
   background-color: #fff;
   border: none;
@@ -91,7 +91,7 @@
 .section2-txt-wrap .viewmore p {
   font-family: "Arimo", sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .section2-txt-wrap .viewmore:hover {
