@@ -190,7 +190,7 @@ const HeaderNav = () => {
           </form>
 
           <button className='toggle-btn' type='button' onClick={toggleSidebar}>
-            <Icon icon="gg:menu-left" color="white" height="24" />
+            <Icon icon="gg:menu-left" color="#600D22" height="24" />
           </button>
         </div>
 

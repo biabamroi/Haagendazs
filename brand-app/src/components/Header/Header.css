@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1140px;
+  /* width: 1140px; */
+  width: 80%;
   height: 70px;
   padding: 10px 20px;
   border-radius: 40px;
@@ -20,7 +21,6 @@
 }
 
 .header-wrap .header-menu-wrap img {
-  width: auto;
   height: 50px;
   margin-right: 20px;
 }
@@ -35,19 +35,18 @@
   display: flex;
 }
 
-.main-menu-wrap .header-main-menu div>a {
+.main-menu-wrap .header-main-menu div > a {
   display: inline-block;
-  height: 50px;
+  height: 100%;
   margin-right: 40px;
   text-decoration: none;
+  line-height: 50px; /* 세로 가운데 정렬을 위한 line-height 설정 */
   font-size: 13px;
   font-weight: 700;
   color: white;
-  line-height: 50px;
-  /* 세로 가운데 정렬을 위한 line-height 설정 */
 }
 
-.main-menu-wrap .header-main-menu div:last-child>a {
+.main-menu-wrap .header-main-menu div:last-child > a {
   margin-right: 0;
 }
 
@@ -63,8 +62,8 @@
   margin-left: 40px;
   font-weight: 700;
   font-size: 20px;
-  cursor: pointer;
   color: white;
+  cursor: pointer;
 }
 
 .shopping-mall span {
@@ -78,6 +77,7 @@
 
 
 .header-controls {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -90,7 +90,8 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: black;
+  background-color: white;
+  z-index: 700;
 }
 
 .header-controls .toggle-btn:hover {
@@ -294,10 +295,90 @@
 }
 
 
-@media screen and (max-width: 1023px) {}
 
-@media screen and (max-width: 767px) {}
 
-@media screen and (max-width: 639px) {}
+@media screen and (max-width: 1023px) {
 
-@media screen and (max-width: 319px) {}
+  .header-wrap .header-menu-wrap img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .main-menu-wrap .header-main-menu div > a {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  .shopping-mall {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  .shopping-mall span {
+    font-size: 13px;
+  }
+  
+  .shopping-mall:hover {
+    transform: scale(1.25);
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .header-controls .search-container {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+
+  .main-menu-wrap .header-main-menu div > a {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .shopping-mall {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .header-wrap {
+    height: 50px;
+    padding: 6px 12px;
+  }
+
+  .main-menu-wrap .header-main-menu a {
+    position: relative;
+  }
+  
+  .header-wrap .header-menu-wrap img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+  }
+  
+  .main-menu-wrap {
+    margin-left: 80px;
+  }
+
+  .main-menu-wrap .header-main-menu div > a {
+    margin-right: 4px;
+    font-size: 10px;
+  }
+
+  .shopping-mall {
+    font-size: 10px;
+  }
+
+  .header-controls .toggle-btn {
+    width: 30px;
+    height: 30px;
+  }
+  
+}
