@@ -8,14 +8,15 @@
   right: 0;
   background-color: #600624;
   z-index: 800;
-  animation: softRemove 2s 2s forwards;
+  /* animation: softRemove 2s 2s forwards; */
 }
 
 .loadingBackground h1 {
   position: absolute;
   top: 50%;
-  left: 300px;
+  left: 20%;
   transform: translateY(-50%);
+  transform: translateX(-20%);
   font-family: "Martel Sans", sans-serif;
   letter-spacing: 5px;
   color: #fff;
@@ -23,12 +24,13 @@
   text-shadow: 2px 3px 20px rgba(0, 0, 0, .6);
 }
 
-
 .loadingBackground div::before {
-  position: absolute;
   content: '';
-  right: 333px;
-  bottom: 24%;
+  position: absolute;
+  bottom: 23%;
+  right: 14%;
+  transform: translateY(-23%);
+  transform: translateX(-14%);
   width: 500px;
   height: 100px;
   border-radius: 50%;
@@ -37,22 +39,261 @@
 
 .loadingBackground img {
   position: absolute;
-  top: 122px;
-  right: 300px;
+  top: 16%;
+  right: 12%;
+  transform: translateY(-16%);
+  transform: translateX(-12%);
   width: 600px;
   object-fit: cover;
 }
 
 
-
 @keyframes softRemove {
-
   20% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
     display: none;
   }
+}
+
+
+@media screen and (max-width: 1800px) {
+  
+  .loadingBackground h1 {
+    font-size: 90px;
+  }
+
+  .loadingBackground img {
+    width: 560px;
+  }
+  
+  .loadingBackground div::before {
+    bottom: 26%;
+    right: 14%;
+    transform: translateY(-26%);
+    transform: translateX(-14%);
+    width: 480px;
+  }
+
+}
+
+@media screen and (max-width: 1600px) {
+
+  .loadingBackground h1 {
+    font-size: 80px;
+  }
+  
+  .loadingBackground div::before {
+    content: '';
+    position: absolute;
+    bottom: 32%;
+    right: 14%;
+    transform: translateY(-32%);
+    transform: translateX(-14%);
+    width: 420px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff15;
+  }
+  
+  .loadingBackground img {
+    position: absolute;
+    top: 16%;
+    right: 12%;
+    transform: translateY(-16%);
+    transform: translateX(-12%);
+    width: 500px;
+  }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+  .loadingBackground h1 {
+    font-size: 64px;
+  }
+  
+  .loadingBackground div::before {
+    bottom: 34%;
+    right: 12%;
+    transform: translateY(-34%);
+    transform: translateX(-12%);
+    width: 400px;
+  }
+  
+  .loadingBackground img {
+    top: 18%;
+    right: 10%;
+    transform: translateY(-18%);
+    transform: translateX(-10%);
+    width: 460px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .loadingBackground h1 {
+    font-size: 56px;
+  }
+
+  .loadingBackground div::before {
+    bottom: 36%;
+    right: 12%;
+    transform: translateY(-36%);
+    transform: translateX(-12%);
+    width: 360px;
+  }
+  
+  .loadingBackground img {
+    top: 20%;
+    right: 10%;
+    transform: translateY(-20%);
+    transform: translateX(-10%);
+    width: 420px;
+  }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+  .loadingBackground h1 {
+    top: 46%;
+    left: 20%;
+    transform: translateY(-46%);
+    transform: translateX(-20%);
+    font-size: 50px;
+  }
+
+  .loadingBackground div::before {
+    bottom: 34%;
+    right: 9%;
+    transform: translateY(-34%);
+    transform: translateX(-9%);
+    width: 360px;
+  }
+  
+  .loadingBackground img {
+    top: 24%;
+    right: 8%;
+    transform: translateY(-24%);
+    transform: translateX(-8%);
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .loadingBackground h1 {
+    top: 40%;
+    left: 18%;
+    transform: translateY(-40%);
+    transform: translateX(-18%);
+    font-size: 48px;
+  }
+
+  .loadingBackground div::before {
+    bottom: 34%;
+    right: 7%;
+    transform: translateY(-34%);
+    transform: translateX(-7%);
+    width: 340px;
+  }
+  
+  .loadingBackground img {
+    top: 26%;
+    right: 6%;
+    transform: translateY(-26%);
+    transform: translateX(-6%);
+    width: 380px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .loadingBackground h1 {
+    top: 40%;
+    left: 16%;
+    transform: translateY(-40%);
+    transform: translateX(-16%);
+    font-size: 48px;
+  }
+
+  .loadingBackground div::before {
+    bottom: 20%;
+    right: 7%;
+    transform: translateY(-20%);
+    transform: translateX(-7%);
+    width: 340px;
+  }
+  
+  .loadingBackground img {
+    top: 40%;
+    right: 6%;
+    transform: translateY(-40%);
+    transform: translateX(-6%);
+    width: 380px;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .loadingBackground h1 {
+    top: 50%;
+    left: 16%;
+    transform: translateY(-50%);
+    transform: translateX(-16%);
+    font-size: 46px;
+  }
+
+  .loadingBackground div::before {
+    bottom: 16%;
+    right: 6%;
+    transform: translateY(-16%);
+    transform: translateX(-6%);
+    width: 310px;
+  }
+  
+  .loadingBackground img {
+    top: 46%;
+    right: 4%;
+    transform: translateY(-46%);
+    transform: translateX(-4%);
+    width: 360px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .loadingBackground h1 {
+    top: 40%;
+    left: 16%;
+    transform: translateY(-40%);
+    transform: translateX(-16%);
+    font-size: 46px;
+    border: 5px solid yellow;
+  }
+
+  .loadingBackground div::before {
+    bottom: 16%;
+    right: 6%;
+    transform: translateY(-16%);
+    transform: translateX(-6%);
+    width: 310px;
+  }
+  
+  .loadingBackground img {
+    top: 46%;
+    right: 4%;
+    transform: translateY(-46%);
+    transform: translateX(-4%);
+    width: 360px;
+  }
+
 }
