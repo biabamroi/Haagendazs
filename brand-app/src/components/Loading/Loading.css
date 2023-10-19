@@ -244,9 +244,9 @@
 @media screen and (max-width: 700px) {
 
   .loadingBackground h1 {
-    top: 50%;
+    top: 40%;
     left: 16%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     transform: translateX(-16%);
     font-size: 46px;
   }
@@ -255,7 +255,7 @@
     bottom: 16%;
     right: 6%;
     transform: translateY(-16%);
-    transform: translateX(-6%);
+    transform: translateX(-6%); 
     width: 310px;
   }
   
@@ -271,29 +271,16 @@
 
 @media screen and (max-width: 600px) {
 
-  .loadingBackground h1 {
-    top: 40%;
-    left: 16%;
-    transform: translateY(-40%);
-    transform: translateX(-16%);
-    font-size: 46px;
-    border: 5px solid yellow;
-  }
-
   .loadingBackground div::before {
-    bottom: 16%;
+    bottom: 21%;
     right: 6%;
-    transform: translateY(-16%);
+    transform: translateY(-21%);
     transform: translateX(-6%);
-    width: 310px;
+    width: 260px;
   }
   
   .loadingBackground img {
-    top: 46%;
-    right: 4%;
-    transform: translateY(-46%);
-    transform: translateX(-4%);
-    width: 360px;
+    width: 300px;
   }
 
 }
