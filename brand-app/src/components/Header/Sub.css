@@ -1,11 +1,9 @@
 .main-menu-wrap .sub-menu {
+  display: none;
   position: fixed;
   top: 66px;
-  left: 60px;
-  /* display: flex; */
-  display: none;
-  align-items: center;
-  width: 80%;
+  left: 72px;
+  width: 60%;
   height: 180px;
   padding: 30px;
   border-radius: 30px;
@@ -33,24 +31,37 @@
   /* 메인 메뉴 항목 위에 마우스를 가져갔을 때 서브 메뉴 표시 */
 }
 
+/* 메인 메뉴 항목을 상대 위치로 설정 */
+.main-menu-wrap .header-main-menu>div {
+  position: relative;
+}
+
+/* 서브 메뉴의 삼각형 뿔 위치를 백분율로 조정 */
+.main-menu-wrap .header-main-menu>div .haagen:before,
+.main-menu-wrap .header-main-menu>div .product:before,
+.main-menu-wrap .header-main-menu>div .shop:before,
+.main-menu-wrap .header-main-menu>div .event:before {
+  position: absolute;
+}
+
 /* 첫 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
 .main-menu-wrap .header-main-menu>div .haagen:before {
-  left: 48px;
+  left: 6%;
 }
 
 /* 두 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
 .main-menu-wrap .header-main-menu>div .product:before {
-  left: 126px;
+  left: 16%;
 }
 
 /* 세 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
 .main-menu-wrap .header-main-menu>div .shop:before {
-  left: 204px;
+  left: 26%;
 }
 
 /* 네 번째 서브 메뉴의 삼각형 뿔 위치 조정 */
 .main-menu-wrap .header-main-menu>div .event:before {
-  left: 288px;
+  left: 37%;
 }
 
 /* 서브 메뉴 항목 스타일 */
@@ -59,27 +70,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  margin-right: 40px;
 }
 
-.main-menu-wrap .header-main-menu>div .sub-menu div:first-child {
-  margin-right: 20px;
-}
-
-.main-menu-wrap .header-main-menu>div .sub-menu div:last-child {
-  margin-right: 0;
+.main-menu-wrap .header-main-menu>div .haagen div {
+  padding-left: 10px;
 }
 
 .main-menu-wrap .header-main-menu>div .shop div {
-  padding-left: 160px;
+  padding-left: 162px;
 }
 
 .main-menu-wrap .header-main-menu>div .event div {
-  padding-left: 240px;
+  padding-left: 250px;
 }
 
-.main-menu-wrap .header-main-menu>div .sub-menu div>a {
+.main-menu-wrap .header-main-menu>div .sub-menu div > a {
   position: relative;
   width: 100px;
   height: 50px;
@@ -126,14 +131,3 @@
 }
 
 
-
-@media screen and (max-width: 1023px) {
-
-
-}
-
-@media screen and (max-width: 767px) {}
-
-@media screen and (max-width: 639px) {}
-
-@media screen and (max-width: 319px) {}
