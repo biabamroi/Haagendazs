@@ -1,0 +1,92 @@
+.footer-wrapper {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-wrapper .line {
+  position: relative;
+  border-bottom: 1px solid #600d22;
+}
+
+.footer-wrapper .line > img {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+}
+
+
+/* Footer 상단 */
+
+.footer-wrapper .first-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 20px 0;
+  font-size: 13px;
+  background-color: #e4e4e4;
+}
+
+.footer-wrapper .first-box .call {
+  position: relative;
+  padding: 0 30px 0 40px;
+  color: #600d22;
+  letter-spacing: -1px;
+}
+
+.footer-wrapper .first-box .call .icon {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-wrapper .first-box .call span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-wrapper .first-box .time {
+  padding-right: 20px;
+  text-align: left;
+  color: #6e6e6e;
+  letter-spacing: -1px;
+}
+
+
+/* Footer 하단 */
+
+.footer-wrapper .second-box {
+  padding: 20px;
+  font-size: 13px;
+  color: #dbdbdb;
+  background-color: #600d22;
+}
+
+.footer-wrapper .second-box .txt-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper .second-box .txt-wrap .text > p {
+  margin: 5px 0;
+  text-align: left;
+}
+
+.footer-wrapper .second-box .txt-wrap .follow > p {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer-wrapper .second-box .txt-wrap .follow .sns a {
+  padding-right: 5px;
+  color: #fff;
+}
+
+.footer-wrapper .second-box > p {
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 700;
+}

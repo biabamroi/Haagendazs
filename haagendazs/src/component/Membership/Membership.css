@@ -1,0 +1,21 @@
+.membership {
+    position: relative;
+    height: 625px;
+    background-image: url(../Membership/membership_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.kakao-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    background-color: #FFC83B;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
