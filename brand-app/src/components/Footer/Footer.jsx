@@ -47,16 +47,16 @@ const Footer = () => {
             <div className="fb-left">
               <div className="fb-right mobile-sns sm-only">
                 <a href="https://twitter.com/HaagenDazs_US">
-                  <Icon icon="formkit:twitter" height="40" />
+                  <Icon className="sns" icon="formkit:twitter" height="40" />
                 </a>
                 <a href="https://www.instagram.com/haagendazskorea/">
-                  <Icon icon="entypo-social:instagram-with-circle" height="40" />
+                  <Icon className="sns" icon="entypo-social:instagram-with-circle" height="40" />
                 </a>
                 <a href="https://www.facebook.com/HaagenDazsKR/">
-                  <Icon icon="formkit:facebook" height="40" />
+                  <Icon className="sns" icon="formkit:facebook" height="40" />
                 </a>
                 <a href="https://www.youtube.com/c/HaagenDazsKorea/featured">
-                  <Icon icon="entypo-social:youtube-with-circle" height="40" />
+                  <Icon className="sns" icon="entypo-social:youtube-with-circle" height="40" />
                 </a>
               </div>
               <p className="copyright">© 2023 General Mills. All Rights Reserved.</p>
