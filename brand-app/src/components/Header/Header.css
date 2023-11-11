@@ -126,7 +126,7 @@
   margin: 20px 0;
   width: 100%;
   border: 1px solid #ccc;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .sd-header {
@@ -160,7 +160,7 @@
 }
 
 .sd-header .close:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .sd-header .btn-wrap {
@@ -178,7 +178,7 @@
   border-radius: 5px;
   background-color: #fff;
   color: #600D22;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .sd-header .btn-wrap button:hover {
@@ -209,6 +209,7 @@
 
 .sd-body .sd-brand {
   margin-bottom: 10px;
+  font-size: 14px;
   font-weight: 700;
   color: #600D22;
 }
@@ -219,11 +220,12 @@
 
 .on {
   display: block;
+  font-size: 14px;
 }
 
 .on .switch:hover,
 .off .switch:hover {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .sd-body ul {
@@ -240,7 +242,7 @@
 }
 
 .sd-body ul li .sd-link {
-  font-size: 13px;
+  font-size: 11px;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -368,13 +370,21 @@
   }
 
   .main-menu-wrap .header-main-menu div > a {
-    margin-right: 4px;
-    font-size: 10px;
+    display: none;
   }
 
   .shopping-mall {
-    margin-left: 8px;
-    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+  .shopping-mall:hover {
+    transform: translateY(-10px) scale(1.25);
+  }
+  .shopping-mall span {
+    display: none;
   }
 
   .header-controls .toggle-btn {
