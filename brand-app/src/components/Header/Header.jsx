@@ -98,7 +98,7 @@ const HeaderNav = () => {
                         <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
                       </a>
                     </div>
-                    <div>
+                    <div className="minicup">
                       <a href="/">미니컵
                         <img className="bgvanilla" src="/assets/header/bgvanilla.png" alt="bgvanilla" />
                       </a>
